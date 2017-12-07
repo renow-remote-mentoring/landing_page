@@ -1,0 +1,461 @@
+// Your custom style
+$myPrime: #2BBBAD;
+$mySecondary: #202A34;
+$myShadow: #5F5E65;
+$myBackground: #FAFAFA;
+$cardFont-size: 0.9rem;
+$cardLine-height: 1.4;
+$cardLines-to-show: 3;
+/* YOUR CUSTOM STYLES */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+html,
+body,
+.wide,
+.view,
+.carousel,
+.carousel-item,
+.active,
+.carousel-inner {
+    height: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: $mySecondary;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.view {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+hr {
+  border-color: $myPrime;
+  border-width: 3px;
+  max-width: 50px;
+}
+
+.dashLine {
+  border-width: 1px;
+  max-width: 10000000000px;
+  opacity: 0.3;
+  border-style: dashed;
+}
+
+.white {
+  border-color: $myBackground;
+}
+
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    background-color: $myPrime; /* Set a background color */
+    color: $myBackground; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+}
+
+#backToTop.scrolled {
+    display: block;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: $myPrime;
+  transition: background-color 200ms linear;
+}
+
+.navbar-brand {
+  align-self: center;
+}
+
+.safari {
+  font-weight: 500;
+  -webkit-font-smoothing: subpixel-antialiased;
+  div {
+    input {
+      border-radius: 1000rem !important;
+      font-size: larger !important;
+      background-color: transparent !important;
+      border: 3px solid $myBackground !important;
+      padding: .36rem 2.13rem !important;
+      margin: 6px !important;
+      // margin-bottom: 1.5rem !important;
+      height: auto !important;
+      transition: .2s ease-out !important;
+      display: inline-block !important;
+      font-weight: 400 !important;
+    }
+  }
+
+}
+
+.collapse {
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+.content {
+  margin-bottom: 10rem;
+}
+
+.bc-mySecondary {
+  background-color: $mySecondary;
+}
+
+.bc-myBackground {
+  background-color: $myBackground;
+}
+
+.bc-myShadow {
+  background-color: $myShadow;
+}
+
+.btn-rounded {
+    border-radius: 1000rem;
+    font-size: larger;
+}
+
+.btn-outline-trans {
+  background-color: transparent;
+  border: 3px solid $myBackground;
+  box-shadow: none;
+}
+
+.btn-learnMore {
+  background-color: $myBackground;
+}
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: $myPrime;
+}
+
+.flex-center {
+    color: $myBackground;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url("../img/cover/adventure-friendship-group.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url("../img/cover/Resources-for-Digital-Nomads-smaller-size.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url("../img/cover/mans-personality-jeans.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.h1-responsive {
+  margin-right: 3.5rem;
+  margin-left: 3.5rem;
+  margin-bottom: 1em;
+}
+
+.h4-responsive {
+  margin-right: 3.5rem;
+  margin-left: 3.5rem;
+}
+
+.my-6 {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.fa-quote-left {
+  margin-right: 3rem;
+}
+
+.fa-quote-right {
+  margin-left: 3rem;
+}
+
+.iconColor {
+  font-size: 5rem;
+  // text-shadow: 2px 2px 4px $myShadow;
+}
+
+.myPrime-text {
+  color: $myPrime;
+}
+
+.mySecondary-text {
+  color: $mySecondary !important;
+}
+
+.parallax {
+    background-attachment: fixed;
+}
+
+.card {
+    border-width: 0;
+    .view {
+      height: auto;
+    }
+}
+
+.card-text {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: $cardFont-size*$cardLine-height*$cardLines-to-show; /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: $cardFont-size;
+  line-height: $cardLine-height;
+  -webkit-line-clamp: $cardLines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contentPosition1 {
+  width: 45%;
+  position: absolute;
+  z-index: 1;
+  margin-top: 5rem;
+  margin-left: 3rem;
+}
+
+.contentPosition2 {
+  width: 45%;
+  position: absolute;
+  right: 5rem;
+  z-index: 1;
+  margin-top: 5rem;
+}
+
+.imgPosition {
+  width: 50%;
+  margin-top: 5%;
+}
+
+.btnPosition1 {
+    width: 100%;
+    margin-bottom: 10rem;
+    padding-top: 5rem;
+}
+
+.btnPosition2 {
+    width: 100%;
+    margin-bottom: 10rem;
+    padding-top: 15rem;
+}
+
+#about {
+    background-color: $myBackground;
+}
+
+#features {
+   background-color: $myShadow;
+}
+
+#cities {
+    background-image: url("../img/cover/film-sleeping-bag-camera.jpg");
+    // background-color: $myBackground;
+}
+
+#quote {
+    /*background-image: url("../img/cover/.jpg");*/
+    background-color: $myBackground;
+    /*display: none;*/
+}
+
+#imagine {
+    background-image: url("../img/cover/4.jpg");
+}
+
+#whoShouldCome {
+    background-image: url("../img/cover/1.jpg");
+    background-position: center;
+}
+
+#subscribe {
+    /*background-image: url("../img/cover/.jpg");*/
+    background-color: $myPrime;
+    /*display: none;*/
+}
+
+#mc_embed_signup {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+#mce-EMAIL {
+  background-color: $myBackground !important;
+  border-radius: 100000px !important;
+  box-shadow: none !important;
+  width: 70% !important;
+  // margin-bottom: 1rem !important;
+  height: 3rem !important;
+}
+
+#mce-EMAIL::placeholder {
+  color: $myShadow !important;
+  margin-left: 1rem !important;
+}
+
+#explainFeature {
+  li {
+    width: 75%;
+  }
+}
+
+footer.page-footer {
+    margin-top: 0;
+    background-color: $myShadow;
+    .font-italic {
+      font-size: 0.5rem;
+    }
+}
+
+.chiangMaiHeader {
+  background-image: url("../img/Chiang Mai/ChiangMai2.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.hoChiMinhHeader {
+  background-image: url("../img/HoChiMing City/5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.baliHeader {
+  background-image: url("../img/Bali/4.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.detailsHeader {
+  background-image: url("../img/cover/silhouette-of-man-jumping-on-rocks-at-sunset.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.faqHeader {
+  background-image: url("../img/cover/o_1ak8nh2n61lkg1jr31f5ljlg3jo7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.md-form {
+  .btn {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .p-rwd {
+    max-width: 15rem;
+    align-self: center;
+  }
+  #explainFeature {
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        margin-bottom: 3rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .imgPosition {
+    width: 100%;
+  }
+  .btnPosition1, .btnPosition2 {
+    padding-top: 3rem;
+  }
+  .contentPosition1, .contentPosition2 {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    right: 0;
+  }
+  #explainFeature {
+    li {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: $myPrime;
+    }
+    .h5-responsive {
+        font-size: 100%;
+    }
+    .card {
+        margin-bottom: 2rem;
+    }
+    .my-6 {
+        margin-top: 5rem;
+    }
+    .contentPosition1, .contentPosition2 {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 776px) {
+    .carousel .view ul li {
+        display: inline;
+    }
+    .carousel .view .full-bg-img ul li .flex-item {
+        margin-bottom: 1.5rem;
+    }
+    .btnPosition2 {
+      padding-top: 20rem;
+    }
+}
+
+@media (min-width: 1025px) {
+  .contentPosition2 {
+     right: 9rem;
+  }
+  .btnPosition2 {
+    padding-top: 15rem;
+  }
+}
