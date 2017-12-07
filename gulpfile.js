@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var sass = require('gulp-sass');
 var critical = require('critical').stream;
 var htmlmin = require('gulp-htmlmin');
 var cleanCSS = require('gulp-clean-css');
@@ -7,6 +8,13 @@ var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
+
+//compile custom sass
+gulp.task('sass', function () {
+  return gulp.src('src/sass/mdb/custom.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('src/css'));
+});
 
 //critical css
 gulp.task('critical', function () {
@@ -80,6 +88,7 @@ gulp.task('browsersync', function () {
 });
 
 gulp.task('watch', function(){
+  gulp.watch('src/sass/mdb/custom.scss', ['sass'])
   gulp.watch('src/css/*.css', ['critical'])
 
   gulp.watch('src/*.html', ['html']) //監看所有 html 檔案，檔案有更動時就執行 task html
@@ -88,4 +97,4 @@ gulp.task('watch', function(){
   gulp.watch('app/pug/**/*.pug', ['pug']);
 });
 
-gulp.task('default', ['watch','browsersync','critical','html','style', 'script', 'image']);
+gulp.task('default',['watch','browsersync','sass','critical','html','style','script','image']);

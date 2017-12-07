@@ -1,0 +1,264 @@
+// Your custom style
+$myPrime: #254E6D;
+$mySecondary: #202A34;
+$myShadow: #5F5E65;
+$myBackground: #FAFAFA;
+// $cardFont-size: 0.9rem;
+// $cardLine-height: 1.4;
+// $cardLines-to-show: 3;
+/* YOUR CUSTOM STYLES */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+html,
+body,
+.wide,
+.view,
+ {
+    height: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: $mySecondary;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.view {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+hr {
+  border-color: $myPrime;
+  border-width: 3px;
+  max-width: 50px;
+}
+
+.white {
+  border-color: $myBackground;
+}
+
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    background-color: $myPrime; /* Set a background color */
+    color: $myBackground; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+}
+
+#backToTop.scrolled {
+    display: block;
+}
+
+.navbar {
+    background-color: $myPrime;
+}
+
+.navbar.scrolled {
+  background-color: $myPrime;
+  transition: background-color 200ms linear;
+}
+
+.navbar-brand {
+  align-self: center;
+}
+
+.collapse {
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+.content {
+  margin-bottom: 10rem;
+}
+
+.bc-myPrime {
+  background-color: $myPrime;
+}
+
+.bc-mySecondary {
+  background-color: $mySecondary;
+}
+
+.bc-myBackground {
+  background-color: $myBackground;
+}
+
+.bc-myShadow {
+  background-color: $myShadow;
+}
+
+.btn-rounded {
+    border-radius: 1000rem;
+    font-size: larger;
+}
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: $myPrime;
+}
+
+// .flex-center {
+//     color: $myBackground;
+// }
+
+.h1-responsive {
+  margin-right: 3.5rem;
+  margin-left: 3.5rem;
+  margin-bottom: 1em;
+}
+
+.h4-responsive {
+  margin-right: 3.5rem;
+  margin-left: 3.5rem;
+}
+
+.my-6 {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.myPrime-text {
+  color: $myPrime;
+}
+
+.mySecondary-text {
+  color: $mySecondary;
+}
+
+.parallax {
+    background-attachment: fixed;
+}
+
+// .card {
+//     border-width: 0;
+//     .view {
+//       height: auto;
+//     }
+// }
+
+// .card-text {
+//   display: block; /* Fallback for non-webkit */
+//   display: -webkit-box;
+//   height: $cardFont-size*$cardLine-height*$cardLines-to-show; /* Fallback for non-webkit */
+//   margin: 0 auto;
+//   font-size: $cardFont-size;
+//   line-height: $cardLine-height;
+//   -webkit-line-clamp: $cardLines-to-show;
+//   -webkit-box-orient: vertical;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }
+
+#homeCover {
+    background-image: url("../img/cover/al-ghazali-366777.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#value {
+    background-color: $myBackground;
+    // background-image: url("../img/cover/.jpg");
+}
+
+#howItWorks {
+   background-color: $myShadow;
+   // background-image: url("../img/cover/.jpg");
+}
+
+#mentors {
+    background-color: $myPrime;
+    // background-image: url("../img/cover/.jpg");
+}
+
+#team {
+    background-color: $myBackground;
+    // background-image: url("../img/cover/.jpg");
+}
+
+#partners {
+    background-color: $myShadow;
+    // background-image: url("../img/cover/.jpg");
+}
+
+#subscribe {
+    /*background-image: url("../img/cover/.jpg");*/
+    background-color: $myPrime;
+    /*display: none;*/
+}
+
+// #mc_embed_signup {
+//   margin-top: 3rem !important;
+//   margin-bottom: 3rem !important;
+// }
+//
+// #mce-EMAIL {
+//   background-color: $myBackground !important;
+//   border-radius: 100000px !important;
+//   box-shadow: none !important;
+//   width: 70% !important;
+//   // margin-bottom: 1rem !important;
+//   height: 3rem !important;
+// }
+//
+// #mce-EMAIL::placeholder {
+//   color: $myShadow !important;
+//   margin-left: 1rem !important;
+// }
+
+.md-form {
+  .btn {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer {
+  background-color: $myPrime;
+}
+
+.footer-copyright {
+  background-color: $mySecondary;
+}
+
+@media only screen and (max-width: 576px) {
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: $myPrime;
+    }
+    .h5-responsive {
+        font-size: 100%;
+    }
+    // .card {
+    //     margin-bottom: 2rem;
+    // }
+    .my-6 {
+        margin-top: 5rem;
+    }
+}
+
+@media (min-width: 776px) {
+}
+
+@media (min-width: 1025px) {
+}
