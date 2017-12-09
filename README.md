@@ -6,8 +6,8 @@
 ### Contribute
 ---
  - Let's keep things simple and just follow the [github flow].
- >> In short, that is to say whenever you want to fix bugs, build features and make any changes, you create a new branch from the master.   
- >> After you made your changes, commit, push and open a pull request, then I'll review and merge it for you :)
+ 	> In short, that is to say whenever you want to fix bugs, build features and make any changes, you create a new branch from the master.   
+ 	> After you made your changes, commit, push and open a pull request, then I'll review and merge it for you :)
 
  - Please modify the [custom.scss] file only when changing the styles, leave all the css files alone.
 
