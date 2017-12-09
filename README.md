@@ -1,32 +1,31 @@
 # Welcome to Re.Now
----
  - This is the working space of the Re.Now landing space.
  - Team members only.
 
 ## Guidelines
----
 ### Contribute
 ---
- > Let's keep things simple and just follow the [github flow] [1].
- >> In short, that is to say whenever you want to fix bugs, build features and make any changes, you create a new branch from master.
+ - Let's keep things simple and just follow the [github flow].
+ >> In short, that is to say whenever you want to fix bugs, build features and make any changes, you create a new branch from the master.   
  >> After you made your changes, commit, push and open a pull request, then I'll review and merge it for you :)
 
- > Please modify the [custom.scss] [2] file only when changing the styles, leave all the css files alone.
+ - Please modify the [custom.scss] file only when changing the styles, leave all the css files alone.
 
 ### Frameworks
 ---
- - We used bootstrap, most elements and templates are from the [MDB] [3].
- - The deploy is done with a [gulp] [4] pipeline.
+ - We used bootstrap, most elements and templates are from the [MDB].
+ - The deploy is done with a [gulp] pipeline.
 
-  [1]: https://guides.github.com/introduction/flow/
-  [2]: /src/sass/mdb/custom.scss
-  [3]: https://mdbootstrap.com/
-  [4]: https://gulpjs.com/
+  [github flow]: https://guides.github.com/introduction/flow/
+  [custom.scss]: /src/sass/mdb/custom.scss
+  [MDB]: https://mdbootstrap.com/
+  [gulp]: https://gulpjs.com/
 
 ### gh-pages
 ---
  - The live landing page is served with the orphan gh-pages branch (which contains only the dist folder). 
  - To deploy the new version, subtree push the dist folder on gh-pages branch.
+ 
  **Please do NOT do this unless specifically instructed to**
  
 ```
