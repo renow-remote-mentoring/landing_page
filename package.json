@@ -33,6 +33,9 @@
   },
   "dependencies": {
     "critical": "^0.9.1",
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "jquery": "^3.2.1",
+    "jquery-smooth-scroll": "^2.2.0",
+    "smoothscroll": "^0.4.0"
   }
 }

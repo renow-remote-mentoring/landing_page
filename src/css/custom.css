@@ -5,8 +5,8 @@ body,
 .wide,
 .view {
   height: 100%;
-  font-family: 'Noto Sans TC', sans-serif;
-  color: #202A34;
+  font-family: 'Raleway', sans-serif;
+  color: #2C4F6C;
   -webkit-font-smoothing: subpixel-antialiased; }
 
 main {
@@ -21,9 +21,16 @@ main {
   background-size: cover; }
 
 hr {
-  border-color: #254E6D;
+  border-color: #2C4F6C;
   border-width: 3px;
   max-width: 50px; }
+
+p {
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-align: center; }
 
 .white {
   border-color: #FAFAFA; }
@@ -39,7 +46,7 @@ hr {
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
-  background-color: #254E6D;
+  background-color: #2C4F6C;
   /* Set a background color */
   color: #FAFAFA;
   /* Text color */
@@ -51,15 +58,36 @@ hr {
 #backToTop.scrolled {
   display: block; }
 
+#nextSec {
+  display: block;
+  /* shown by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  z-index: 98;
+  /* Make sure it does not overlap */
+  background-color: transparent;
+  /* Set a background color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */ }
+
+#nextSec.scrolled {
+  display: none; }
+
 .navbar {
-  background-color: #254E6D; }
+  background-color: #2C4F6C; }
 
 .navbar.scrolled {
-  background-color: #254E6D;
+  background-color: #2C4F6C;
   transition: background-color 200ms linear; }
 
 .navbar-brand {
-  align-self: center; }
+  align-self: center;
+  letter-spacing: 0.375rem;
+  font-size: 1.25rem; }
 
 .collapse .btn {
   font-size: 1rem; }
@@ -68,20 +96,29 @@ hr {
   margin-bottom: 10rem; }
 
 .bc-myPrime {
-  background-color: #254E6D; }
+  background-color: #2C4F6C; }
 
 .bc-mySecondary {
-  background-color: #202A34; }
+  background-color: #A3CCC7; }
 
 .bc-myBackground {
   background-color: #FAFAFA; }
 
-.bc-myShadow {
-  background-color: #5F5E65; }
+.bc-myThird {
+  background-color: #F6D8AE; }
 
 .btn-rounded {
   border-radius: 1000rem;
   font-size: larger; }
+
+.letter-spacing-3 {
+  letter-spacing: 0.3rem; }
+
+.letter-spacing-2 {
+  letter-spacing: 0.2rem; }
+
+.letter-spacing-1 {
+  letter-spacing: 0.1rem; }
 
 .scrolling-navbar {
   -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -89,7 +126,7 @@ hr {
   transition: background .5s ease-in-out, padding .5s ease-in-out; }
 
 .top-nav-collapse {
-  background-color: #254E6D; }
+  background-color: #2C4F6C; }
 
 .h1-responsive {
   margin-right: 3.5rem;
@@ -105,10 +142,10 @@ hr {
   margin-bottom: 3rem; }
 
 .myPrime-text {
-  color: #254E6D; }
+  color: #2C4F6C !important; }
 
 .mySecondary-text {
-  color: #202A34; }
+  color: #A3CCC7 !important; }
 
 .parallax {
   background-attachment: fixed; }
@@ -123,34 +160,34 @@ hr {
   background-color: #FAFAFA; }
 
 #howItWorks {
-  background-color: #5F5E65; }
+  background-color: #F6D8AE; }
 
 #mentors {
-  background-color: #254E6D; }
+  background-color: #2C4F6C; }
 
 #team {
   background-color: #FAFAFA; }
 
 #partners {
-  background-color: #5F5E65; }
+  background-color: #F6D8AE; }
 
 #subscribe {
   /*background-image: url("../img/cover/.jpg");*/
-  background-color: #254E6D;
+  background-color: #2C4F6C;
   /*display: none;*/ }
 
 .md-form .btn {
   margin-bottom: 0; }
 
 .page-footer {
-  background-color: #254E6D; }
+  background-color: #2C4F6C; }
 
 .footer-copyright {
-  background-color: #202A34; }
+  background-color: #A3CCC7; }
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #254E6D; }
+    background-color: #2C4F6C; }
   .h5-responsive {
     font-size: 100%; }
   .my-6 {

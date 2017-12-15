@@ -78,7 +78,7 @@ button:focus {
 
 .btn-secondary.disabled, .btn-secondary:disabled {
         background-color: #b579d2!important;
-        border-color: #b579d2 !important; 
+        border-color: #b579d2 !important;
 }
 
 .btn-group {
@@ -107,4 +107,3 @@ button:focus {
     @include make-button($btn-name, $color-value);
     @include make-outline-button($btn-name, $color-value);
 }
-
