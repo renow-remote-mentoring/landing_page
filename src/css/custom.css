@@ -92,9 +92,6 @@ p {
 .collapse .btn {
   font-size: 1rem; }
 
-.content {
-  margin-bottom: 10rem; }
-
 .bc-myPrime {
   background-color: #2C4F6C; }
 
@@ -104,7 +101,7 @@ p {
 .bc-myBackground {
   background-color: #FAFAFA; }
 
-.bc-myThird {
+.bc-myOrange {
   background-color: #F6D8AE; }
 
 .btn-rounded {
@@ -128,24 +125,14 @@ p {
 .top-nav-collapse {
   background-color: #2C4F6C; }
 
-.h1-responsive {
-  margin-right: 3.5rem;
-  margin-left: 3.5rem;
-  margin-bottom: 1em; }
-
-.h4-responsive {
-  margin-right: 3.5rem;
-  margin-left: 3.5rem; }
-
-.my-6 {
-  margin-top: 10rem;
-  margin-bottom: 3rem; }
-
 .myPrime-text {
   color: #2C4F6C !important; }
 
 .mySecondary-text {
   color: #A3CCC7 !important; }
+
+.myLightBlue-text {
+  color: #BCD1E3 !important; }
 
 .parallax {
   background-attachment: fixed; }
@@ -160,7 +147,7 @@ p {
   background-color: #FAFAFA; }
 
 #howItWorks {
-  background-color: #F6D8AE; }
+  background-color: #A3CCC7; }
 
 #mentors {
   background-color: #2C4F6C; }
