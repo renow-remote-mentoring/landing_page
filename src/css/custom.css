@@ -104,6 +104,9 @@ p {
 .bc-myOrange {
   background-color: #F6D8AE; }
 
+.bc-myLightBlue {
+  background-color: #BCD1E3; }
+
 .btn-rounded {
   border-radius: 1000rem;
   font-size: larger; }
@@ -137,6 +140,12 @@ p {
 .parallax {
   background-attachment: fixed; }
 
+.tag {
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 0.5rem;
+  cursor: auto; }
+
 #homeCover {
   background-image: url("../img/cover/al-ghazali-366777.jpg");
   background-repeat: no-repeat;
@@ -150,32 +159,63 @@ p {
   background-color: #A3CCC7; }
 
 #mentors {
-  background-color: #2C4F6C; }
-
-#team {
   background-color: #FAFAFA; }
 
+#team {
+  background-color: #2C4F6C; }
+
 #partners {
-  background-color: #F6D8AE; }
+  background-color: #FAFAFA; }
 
 #subscribe {
   /*background-image: url("../img/cover/.jpg");*/
-  background-color: #2C4F6C;
+  background-color: #F6D8AE;
   /*display: none;*/ }
 
-.md-form .btn {
-  margin-bottom: 0; }
+#mc_embed_signup {
+  width: 40%; }
 
-.page-footer {
-  background-color: #2C4F6C; }
+#mce-EMAIL {
+  background-color: #FAFAFA !important;
+  border-radius: 10000px !important;
+  box-shadow: none !important;
+  border-width: 0 !important;
+  height: 100% !important;
+  padding: 0 !important;
+  min-height: 56px !important; }
 
-.footer-copyright {
-  background-color: #A3CCC7; }
+#mce-EMAIL::placeholder {
+  color: #2C4F6C !important;
+  margin-left: 1rem !important; }
+
+#submitBtn {
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+#mc-embedded-subscribe {
+  border-radius: 10000px !important;
+  box-shadow: none;
+  border-width: 3px !important;
+  border-color: #FAFAFA !important; }
+
+.mce_inline_error {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  z-index: 50 !important; }
+
+.md-form {
+  margin-bottom: 0 !important; }
 
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: #2C4F6C; }
   .h5-responsive {
     font-size: 100%; }
-  .my-6 {
-    margin-top: 5rem; } }
+  #mc_embed_signup {
+    width: 100%; } }

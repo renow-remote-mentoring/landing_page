@@ -120,6 +120,10 @@ p {
   background-color: $myOrange;
 }
 
+.bc-myLightBlue {
+  background-color: $myLightBlue;
+}
+
 .btn-rounded {
     border-radius: 1000rem;
     font-size: larger;
@@ -163,6 +167,13 @@ p {
     background-attachment: fixed;
 }
 
+.tag {
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 0.5rem;
+  cursor: auto;
+}
+
 // .card {
 //     border-width: 0;
 //     .view {
@@ -201,57 +212,71 @@ p {
 }
 
 #mentors {
-    background-color: $myPrime;
-    // background-image: url("../img/cover/.jpg");
-}
-
-#team {
     background-color: $myBackground;
     // background-image: url("../img/cover/.jpg");
 }
 
+#team {
+    background-color: $myPrime;
+    // background-image: url("../img/cover/.jpg");
+}
+
 #partners {
-    background-color: $myOrange;
+    background-color: $myBackground;
     // background-image: url("../img/cover/.jpg");
 }
 
 #subscribe {
     /*background-image: url("../img/cover/.jpg");*/
-    background-color: $myPrime;
+    background-color: $myOrange;
     /*display: none;*/
 }
 
-// #mc_embed_signup {
-//   margin-top: 3rem !important;
-//   margin-bottom: 3rem !important;
-// }
-//
-// #mce-EMAIL {
-//   background-color: $myBackground !important;
-//   border-radius: 100000px !important;
-//   box-shadow: none !important;
-//   width: 70% !important;
-//   // margin-bottom: 1rem !important;
-//   height: 3rem !important;
-// }
-//
-// #mce-EMAIL::placeholder {
-//   color: $myOrange !important;
-//   margin-left: 1rem !important;
-// }
+#mc_embed_signup {
+  width: 40%;
+}
+
+#mce-EMAIL {
+  background-color: $myBackground !important;
+  border-radius: 10000px !important;
+  box-shadow: none !important;
+  border-width: 0 !important;
+  height: 100% !important;
+  padding: 0 !important;
+  min-height: 56px !important;
+}
+
+#mce-EMAIL::placeholder {
+  color: $myPrime !important;
+  margin-left: 1rem !important;
+}
+
+#submitBtn {
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#mc-embedded-subscribe {
+  border-radius: 10000px !important;
+  box-shadow: none;
+  border-width: 3px !important;
+  border-color: $myBackground !important;
+}
+
+.mce_inline_error {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  z-index: 50 !important;
+}
 
 .md-form {
-  .btn {
-    margin-bottom: 0;
-  }
-}
-
-.page-footer {
-  background-color: $myPrime;
-}
-
-.footer-copyright {
-  background-color: $mySecondary;
+  margin-bottom: 0 !important;
 }
 
 @media only screen and (max-width: 576px) {
@@ -270,8 +295,8 @@ p {
     // .card {
     //     margin-bottom: 2rem;
     // }
-    .my-6 {
-        margin-top: 5rem;
+    #mc_embed_signup {
+      width: 100%;
     }
 }
 
