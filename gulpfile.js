@@ -66,8 +66,8 @@ gulp.task('style', function() {
 
 // uglify js
 gulp.task('script', function () {
-  return gulp.src('src/js/script.js')    //所有要壓縮的 .js 檔案
-    .pipe(uglify())    //將 JavaScript 最小化
+  return gulp.src('src/js/*.js')    //所有要壓縮的 .js 檔案
+    // .pipe(uglify())    //將 JavaScript 最小化
     // .pipe(concat('main.min.js'))    //將所有 js 合併成 main.min.js
     .pipe(gulp.dest('dist/js'))    //檔案輸出路徑
     .pipe(browserSync.stream());    // 瀏覽器同步
