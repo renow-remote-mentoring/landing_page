@@ -7,8 +7,8 @@ new WOW().init();
 // nav cantrol
 $(function () {
   $(document).scroll(function () {
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $cover.height()-$nav.height());
-    $top.toggleClass('scrolled', $(this).scrollTop() > $cover.height()-$nav.height());
+    $nav.toggleClass('scrolled', $(this).scrollTop() > ($cover.height()-$nav.height()));
+    $top.toggleClass('scrolled', $(this).scrollTop() > ($cover.height()-$nav.height()));
     $nextSec.toggleClass('scrolled', $(this).scrollTop() > 0);
   });
 });
@@ -19,8 +19,8 @@ function topFunction() {
 }
 // nextSec
 function nextSecFunction() {
-  document.body.scrollTop = $cover.height()-$nav.height(); // For Chrome, Safari and Opera
-  document.documentElement.scrollTop = $cover.height()-$nav.height(); // For IE and Firefox
+  document.body.scrollTop = ($cover.height()-$nav.height()); // For Chrome, Safari and Opera
+  document.documentElement.scrollTop = ($cover.height()-$nav.height()); // For IE and Firefox
 }
 // browser detection
 $(function () {
