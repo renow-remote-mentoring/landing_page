@@ -79,7 +79,8 @@ p {
   cursor: pointer;
   /* Add a mouse pointer on hover */
   padding: 15px;
-  /* Some padding */ }
+  /* Some padding */
+  box-shadow: none; }
 
 #nextSec.scrolled {
   display: none; }
