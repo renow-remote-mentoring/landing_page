@@ -20,20 +20,27 @@ main {
   -o-background-size: cover;
   background-size: cover; }
 
-hr {
-  border-color: #2C4F6C;
-  border-width: 3px;
-  max-width: 50px; }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  max-width: 25em;
+  line-height: 1.4; }
 
 p {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-size: 1.125rem;
-  line-height: 1.5rem;
-  text-align: center; }
+  line-height: 1.5em;
+  text-align: center;
+  max-width: 35em; }
 
-.white {
-  border-color: #FAFAFA; }
+.h3-responsive {
+  font-size: 1.25rem; }
+
+.h1-responsive {
+  font-size: 2rem; }
 
 #backToTop {
   display: none;
@@ -42,7 +49,7 @@ p {
   /* Fixed/sticky position */
   bottom: 20px;
   /* Place the button at the bottom of the page */
-  right: 30px;
+  left: 30px;
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
@@ -140,11 +147,24 @@ p {
 .parallax {
   background-attachment: fixed; }
 
-.tag {
-  border-radius: 5px;
-  box-shadow: none;
-  font-size: 0.5rem;
-  cursor: auto; }
+.mentorCard {
+  position: relative;
+  width: 30%;
+  border-width: 2px;
+  border-color: #E0E0E0;
+  border-style: solid; }
+  .mentorCard .view {
+    height: auto; }
+  .mentorCard img {
+    border-color: #2C4F6C;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+    top: -56px;
+    left: 0;
+    right: 0; }
+  .mentorCard p {
+    font-size: 0.75rem; }
 
 #homeCover {
   background-image: url("../img/cover/cover.jpg");
@@ -163,6 +183,8 @@ p {
 
 #team {
   background-color: #FAFAFA; }
+  #team p {
+    font-size: 1rem; }
 
 #partners {
   background-color: #2C4F6C; }
@@ -217,5 +239,12 @@ p {
     background-color: #2C4F6C; }
   .h5-responsive {
     font-size: 100%; }
+  .h3-responsive {
+    font-size: 1rem; }
+  .h1-responsive {
+    font-size: 1.5rem; }
+  .mentorCard {
+    width: 100%;
+    margin-top: 5rem; }
   #mc_embed_signup {
     width: 100%; } }

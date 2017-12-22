@@ -5,9 +5,12 @@ $myOrange: #F6D8AE;
 $myLightBlue: #BCD1E3;
 $myBackground: #FAFAFA;
 
-// $cardFont-size: 0.9rem;
-// $cardLine-height: 1.4;
-// $cardLines-to-show: 3;
+$titleFont-size: 1.25rem;
+$titleLine-height: 1.4;
+$subtitleFont-size: 2rem;
+$paragraphFont-size: 1.125rem;
+$paragraphLine-height: 1.5em;
+
 /* YOUR CUSTOM STYLES */
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
@@ -35,29 +38,37 @@ main {
     background-size: cover;
 }
 
-hr {
-  border-color: $myPrime;
-  border-width: 3px;
-  max-width: 50px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  max-width: 25em;
+  line-height: $titleLine-height;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
+  font-size: $paragraphFont-size;
+  line-height: $paragraphLine-height;
   text-align: center;
+  max-width: 35em;
 }
 
-.white {
-  border-color: $myBackground;
+.h3-responsive {
+  font-size: $titleFont-size;
+}
+
+.h1-responsive {
+  font-size: $subtitleFont-size;
 }
 
 #backToTop {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    left: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     background-color: $myPrime; /* Set a background color */
     color: $myBackground; /* Text color */
@@ -167,32 +178,35 @@ p {
     background-attachment: fixed;
 }
 
-.tag {
-  border-radius: 5px;
-  box-shadow: none;
-  font-size: 0.5rem;
-  cursor: auto;
+// .tag {
+//   border-radius: 5px;
+//   box-shadow: none;
+//   font-size: 0.5rem;
+//   cursor: auto;
+// }
+
+.mentorCard {
+    position: relative;
+    width: 30%;
+    border-width: 2px;
+    .view {
+      height: auto;
+    }
+    border-color: #E0E0E0;
+    border-style: solid;
+    img {
+      border-color: $myPrime;
+      border-width: 2px;
+      border-style: solid;
+      position: absolute;
+      top: -56px;
+      left: 0;
+      right: 0;
+    }
+    p {
+      font-size: 0.75rem;
+    }
 }
-
-// .card {
-//     border-width: 0;
-//     .view {
-//       height: auto;
-//     }
-// }
-
-// .card-text {
-//   display: block; /* Fallback for non-webkit */
-//   display: -webkit-box;
-//   height: $cardFont-size*$cardLine-height*$cardLines-to-show; /* Fallback for non-webkit */
-//   margin: 0 auto;
-//   font-size: $cardFont-size;
-//   line-height: $cardLine-height;
-//   -webkit-line-clamp: $cardLines-to-show;
-//   -webkit-box-orient: vertical;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-// }
 
 #homeCover {
     background-image: url("../img/cover/cover.jpg");
@@ -200,6 +214,13 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+// #tempCover {
+//     background-image: url("../img/cover/cover.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+// }
 
 #value {
     background-color: $myBackground;
@@ -219,6 +240,9 @@ p {
 #team {
     background-color: $myBackground;
     // background-image: url("../img/cover/.jpg");
+    p {
+      font-size: 1rem;
+    }
 }
 
 #partners {
@@ -292,9 +316,16 @@ p {
     .h5-responsive {
         font-size: 100%;
     }
-    // .card {
-    //     margin-bottom: 2rem;
-    // }
+    .h3-responsive {
+      font-size: 1rem;
+    }
+    .h1-responsive {
+      font-size: 1.5rem;
+    }
+    .mentorCard {
+        width: 100%;
+        margin-top: 5rem;
+    }
     #mc_embed_signup {
       width: 100%;
     }

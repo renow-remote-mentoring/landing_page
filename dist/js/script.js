@@ -23,10 +23,10 @@ function nextSecFunction() {
   document.documentElement.scrollTop = ($cover.height()-$nav.height()); // For IE and Firefox
 }
 // browser detection
-$(function () {
-if (navigator.userAgent.indexOf('Safari') != -1 &&
-    navigator.userAgent.indexOf('Chrome') == -1) {
-        $(".navbar").addClass("safari");
-        $("#mc_embed_signup_scroll").addClass("safari");
-    }
-});
+// $(function () {
+// if (navigator.userAgent.indexOf('Safari') != -1 &&
+//     navigator.userAgent.indexOf('Chrome') == -1) {
+//         $(".navbar").addClass("safari");
+//         $("#mc_embed_signup_scroll").addClass("safari");
+//     }
+// });
