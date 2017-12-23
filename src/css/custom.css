@@ -24,7 +24,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   max-width: 25em;
   line-height: 1.4; }
 
@@ -33,7 +34,6 @@ p {
   font-style: normal;
   font-size: 1.125rem;
   line-height: 1.5em;
-  text-align: center;
   max-width: 35em; }
 
 .h3-responsive {
@@ -114,6 +114,9 @@ p {
 
 .bc-myLightBlue {
   background-color: #BCD1E3; }
+
+.bc-myDarkBlue {
+  background-color: #213C52 !important; }
 
 .btn-rounded {
   border-radius: 1000rem;
@@ -223,6 +226,9 @@ p {
   border-width: 3px !important;
   border-color: #FAFAFA !important; }
 
+.mc-field-group {
+  margin-bottom: 0; }
+
 .mce_inline_error {
   margin: 0 !important;
   padding: 0 !important;
@@ -235,11 +241,13 @@ p {
 .md-form {
   margin-bottom: 0 !important; }
 
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #2C4F6C; }
-  .h5-responsive {
-    font-size: 100%; }
+footer h5 {
+  margin-bottom: 1.5rem; }
+
+footer p {
+  font-size: 1rem; }
+
+@media only screen and (max-width: 767px) {
   .h3-responsive {
     font-size: 1rem; }
   .h1-responsive {
@@ -247,5 +255,15 @@ p {
   .mentorCard {
     width: 100%;
     margin-top: 5rem; }
+  .mc-field-group {
+    margin-bottom: 1rem; }
   #mc_embed_signup {
-    width: 100%; } }
+    width: 100%; }
+  #submitBtn {
+    position: relative; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #2C4F6C; }
+  .h5-responsive {
+    font-size: 100%; } }

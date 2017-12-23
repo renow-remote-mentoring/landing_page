@@ -3,6 +3,7 @@ $myPrime: #2C4F6C;
 $mySecondary: #A3CCC7;
 $myOrange: #F6D8AE;
 $myLightBlue: #BCD1E3;
+$myDarkBlue: #213C52;
 $myBackground: #FAFAFA;
 
 $titleFont-size: 1.25rem;
@@ -42,7 +43,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   max-width: 25em;
   line-height: $titleLine-height;
 }
@@ -52,7 +54,6 @@ p {
   font-style: normal;
   font-size: $paragraphFont-size;
   line-height: $paragraphLine-height;
-  text-align: center;
   max-width: 35em;
 }
 
@@ -136,6 +137,10 @@ p {
   background-color: $myLightBlue;
 }
 
+.bc-myDarkBlue {
+  background-color: $myDarkBlue !important;
+}
+
 .btn-rounded {
     border-radius: 1000rem;
     font-size: larger;
@@ -216,13 +221,6 @@ p {
     background-position: center;
 }
 
-// #tempCover {
-//     background-image: url("../img/cover/cover.jpg");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-// }
-
 #value {
     background-color: $myBackground;
     // background-image: url("../img/cover/.jpg");
@@ -290,6 +288,10 @@ p {
   border-color: $myBackground !important;
 }
 
+.mc-field-group {
+  margin-bottom: 0;
+}
+
 .mce_inline_error {
   margin: 0 !important;
   padding: 0 !important;
@@ -304,10 +306,38 @@ p {
   margin-bottom: 0 !important;
 }
 
+footer {
+  h5 {
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
 @media only screen and (max-width: 576px) {
 }
 
 @media only screen and (max-width: 767px) {
+  .h3-responsive {
+    font-size: 1rem;
+  }
+  .h1-responsive {
+    font-size: 1.5rem;
+  }
+  .mentorCard {
+      width: 100%;
+      margin-top: 5rem;
+  }
+  .mc-field-group {
+    margin-bottom: 1rem;
+  }
+  #mc_embed_signup {
+    width: 100%;
+  }
+  #submitBtn {
+    position: relative;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -317,19 +347,7 @@ p {
     .h5-responsive {
         font-size: 100%;
     }
-    .h3-responsive {
-      font-size: 1rem;
-    }
-    .h1-responsive {
-      font-size: 1.5rem;
-    }
-    .mentorCard {
-        width: 100%;
-        margin-top: 5rem;
-    }
-    #mc_embed_signup {
-      width: 100%;
-    }
+
 }
 
 @media (min-width: 776px) {
