@@ -253,6 +253,9 @@ p {
     /*background-image: url("../img/cover/.jpg");*/
     background-color: $myOrange;
     /*display: none;*/
+    h3 {
+      margin-bottom: 3rem;
+    }
 }
 
 #mc_embed_signup {
@@ -346,6 +349,14 @@ footer {
     }
     .h5-responsive {
         font-size: 100%;
+    }
+    #subscribe {
+        /*background-image: url("../img/cover/.jpg");*/
+        background-color: $myOrange;
+        /*display: none;*/
+        h3 {
+          margin-bottom: 1rem;
+        }
     }
 
 }

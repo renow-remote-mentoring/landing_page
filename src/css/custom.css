@@ -197,6 +197,8 @@ p {
   /*background-image: url("../img/cover/.jpg");*/
   background-color: #F6D8AE;
   /*display: none;*/ }
+  #subscribe h3 {
+    margin-bottom: 3rem; }
 
 #mc_embed_signup {
   width: 40%; }
@@ -266,4 +268,10 @@ footer p {
   .navbar {
     background-color: #2C4F6C; }
   .h5-responsive {
-    font-size: 100%; } }
+    font-size: 100%; }
+  #subscribe {
+    /*background-image: url("../img/cover/.jpg");*/
+    background-color: #F6D8AE;
+    /*display: none;*/ }
+    #subscribe h3 {
+      margin-bottom: 1rem; } }
