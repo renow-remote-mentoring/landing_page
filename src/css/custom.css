@@ -326,8 +326,6 @@ footer p {
     padding-bottom: 5rem; } }
 
 @media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #2C4F6C; }
   .h5-responsive {
     font-size: 100%; }
   #subscribe {
