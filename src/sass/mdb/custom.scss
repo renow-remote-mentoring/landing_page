@@ -63,8 +63,8 @@ header {
   }
   .btn {
     p {
-      font-weight: 300;
-      text-transform: none;
+      font-weight: 300 !important;
+      text-transform: none !important;
     }
   }
 }
@@ -78,7 +78,7 @@ header {
 }
 
 #bottomNav {
-  display: none;
+  display: none !important;
 }
 
 #backToTop {
@@ -109,7 +109,7 @@ header {
 }
 
 #nextSec.scrolled {
-  display: none;
+  display: none !important;
 }
 
 .navbar {
@@ -117,11 +117,11 @@ header {
 }
 
 .navbar-nav {
-  display: none;
+  display: none !important;
 }
 
 .navbar-nav.scrolled {
-  display: flex;
+  display: flex !important;
 }
 
 .navbar-brand {
@@ -417,7 +417,7 @@ footer {
     }
   }
   #deskCTAbtns {
-    display: none;
+    display: none !important;
   }
   #mc_embed_signup {
     width: 100%;
@@ -426,10 +426,10 @@ footer {
     position: relative;
   }
   #backToTop.scrolled {
-      display: none;
+      display: none !important;
   }
   #bottomNav.scrolled {
-    display: block;
+    display: block !important;
   }
   footer {
     padding-bottom: 5rem;

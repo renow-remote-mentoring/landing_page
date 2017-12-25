@@ -40,8 +40,8 @@ header .btn-rounded {
   font-size: 0.8rem; }
 
 header .btn p {
-  font-weight: 300;
-  text-transform: none; }
+  font-weight: 300 !important;
+  text-transform: none !important; }
 
 .h3-responsive {
   font-size: 1.25rem; }
@@ -50,7 +50,7 @@ header .btn p {
   font-size: 2rem; }
 
 #bottomNav {
-  display: none; }
+  display: none !important; }
 
 #backToTop {
   display: none;
@@ -93,16 +93,16 @@ header .btn p {
   box-shadow: none; }
 
 #nextSec.scrolled {
-  display: none; }
+  display: none !important; }
 
 .navbar {
   background-color: #2C4F6C; }
 
 .navbar-nav {
-  display: none; }
+  display: none !important; }
 
 .navbar-nav.scrolled {
-  display: flex; }
+  display: flex !important; }
 
 .navbar-brand {
   align-self: center;
@@ -315,15 +315,15 @@ footer p {
   #value h2 {
     margin-top: 1rem; }
   #deskCTAbtns {
-    display: none; }
+    display: none !important; }
   #mc_embed_signup {
     width: 100%; }
   #submitBtn {
     position: relative; }
   #backToTop.scrolled {
-    display: none; }
+    display: none !important; }
   #bottomNav.scrolled {
-    display: block; }
+    display: block !important; }
   footer {
     padding-bottom: 5rem; } }
 
