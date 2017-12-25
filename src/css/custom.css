@@ -36,11 +36,21 @@ p {
   line-height: 1.5em;
   max-width: 35em; }
 
+header .btn-rounded {
+  font-size: 0.8rem; }
+
+header .btn p {
+  font-weight: 300;
+  text-transform: none; }
+
 .h3-responsive {
   font-size: 1.25rem; }
 
 .h1-responsive {
   font-size: 2rem; }
+
+#bottomNav {
+  display: none; }
 
 #backToTop {
   display: none;
@@ -88,9 +98,11 @@ p {
 .navbar {
   background-color: #2C4F6C; }
 
-.navbar.scrolled {
-  background-color: #2C4F6C;
-  transition: background-color 200ms linear; }
+.navbar-nav {
+  display: none; }
+
+.navbar-nav.scrolled {
+  display: flex; }
 
 .navbar-brand {
   align-self: center;
@@ -151,6 +163,24 @@ p {
 .parallax {
   background-attachment: fixed; }
 
+.order-0 {
+  order: 0; }
+
+.order-1 {
+  order: 1; }
+
+.order-2 {
+  order: 2; }
+
+.order-3 {
+  order: 3; }
+
+.order-4 {
+  order: 4; }
+
+.order-5 {
+  order: 5; }
+
 .mentorCard {
   position: relative;
   width: 30%;
@@ -178,6 +208,9 @@ p {
 
 #value {
   background-color: #FAFAFA; }
+  #value h1 {
+    margin-left: 3rem;
+    margin-right: 3rem; }
 
 #howItWorks {
   background-color: #A3CCC7; }
@@ -189,9 +222,15 @@ p {
   background-color: #FAFAFA; }
   #team p {
     font-size: 1rem; }
+  #team h1 {
+    margin-left: 3rem;
+    margin-right: 3rem; }
 
 #partners {
   background-color: #2C4F6C; }
+  #partners h1 {
+    margin-left: 3rem;
+    margin-right: 3rem; }
 
 #subscribe {
   /*background-image: url("../img/cover/.jpg");*/
@@ -226,7 +265,8 @@ p {
   border-radius: 10000px !important;
   box-shadow: none;
   border-width: 3px !important;
-  border-color: #FAFAFA !important; }
+  border-color: #FAFAFA !important;
+  font-size: larger; }
 
 .mc-field-group {
   margin-bottom: 0; }
@@ -250,19 +290,42 @@ footer p {
   font-size: 1rem; }
 
 @media only screen and (max-width: 767px) {
+  .navbar-toggler {
+    display: none; }
+  .navbar-brand {
+    margin: auto; }
+  .navbar-nav.scrolled {
+    display: none; }
   .h3-responsive {
     font-size: 1rem; }
   .h1-responsive {
     font-size: 1.5rem; }
+  .order-2 {
+    order: 3; }
+  .order-3 {
+    order: 2; }
   .mentorCard {
     width: 100%;
     margin-top: 5rem; }
   .mc-field-group {
     margin-bottom: 1rem; }
+  #value h1, #team h1, #partners h1 {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  #value h2 {
+    margin-top: 1rem; }
+  #deskCTAbtns {
+    display: none; }
   #mc_embed_signup {
     width: 100%; }
   #submitBtn {
-    position: relative; } }
+    position: relative; }
+  #backToTop.scrolled {
+    display: none; }
+  #bottomNav.scrolled {
+    display: block; }
+  footer {
+    padding-bottom: 5rem; } }
 
 @media only screen and (max-width: 768px) {
   .navbar {

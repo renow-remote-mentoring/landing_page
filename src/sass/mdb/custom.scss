@@ -57,12 +57,28 @@ p {
   max-width: 35em;
 }
 
+header {
+  .btn-rounded {
+    font-size: 0.8rem;
+  }
+  .btn {
+    p {
+      font-weight: 300;
+      text-transform: none;
+    }
+  }
+}
+
 .h3-responsive {
   font-size: $titleFont-size;
 }
 
 .h1-responsive {
   font-size: $subtitleFont-size;
+}
+
+#bottomNav {
+  display: none;
 }
 
 #backToTop {
@@ -93,16 +109,19 @@ p {
 }
 
 #nextSec.scrolled {
-    display: none;
+  display: none;
 }
 
 .navbar {
-    background-color: $myPrime;
+  background-color: $myPrime;
 }
 
-.navbar.scrolled {
-  background-color: $myPrime;
-  transition: background-color 200ms linear;
+.navbar-nav {
+  display: none;
+}
+
+.navbar-nav.scrolled {
+  display: flex;
 }
 
 .navbar-brand {
@@ -184,6 +203,29 @@ p {
     background-attachment: fixed;
 }
 
+.order-0 {
+  order: 0;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-5 {
+  order: 5;
+}
 // .tag {
 //   border-radius: 5px;
 //   box-shadow: none;
@@ -224,6 +266,10 @@ p {
 #value {
     background-color: $myBackground;
     // background-image: url("../img/cover/.jpg");
+    h1 {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
 }
 
 #howItWorks {
@@ -242,11 +288,19 @@ p {
     p {
       font-size: 1rem;
     }
+    h1 {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
 }
 
 #partners {
     background-color: $myPrime;
     // background-image: url("../img/cover/.jpg");
+    h1 {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
 }
 
 #subscribe {
@@ -289,6 +343,7 @@ p {
   box-shadow: none;
   border-width: 3px !important;
   border-color: $myBackground !important;
+  font-size: larger;
 }
 
 .mc-field-group {
@@ -322,11 +377,26 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar-brand {
+    margin: auto;
+  }
+  .navbar-nav.scrolled {
+    display: none;
+  }
   .h3-responsive {
     font-size: 1rem;
   }
   .h1-responsive {
     font-size: 1.5rem;
+  }
+  .order-2 {
+    order: 3;
+  }
+  .order-3 {
+    order: 2;
   }
   .mentorCard {
       width: 100%;
@@ -335,11 +405,34 @@ footer {
   .mc-field-group {
     margin-bottom: 1rem;
   }
+  #value, #team, #partners {
+    h1 {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+  #value {
+    h2 {
+      margin-top: 1rem;
+    }
+  }
+  #deskCTAbtns {
+    display: none;
+  }
   #mc_embed_signup {
     width: 100%;
   }
   #submitBtn {
     position: relative;
+  }
+  #backToTop.scrolled {
+      display: none;
+  }
+  #bottomNav.scrolled {
+    display: block;
+  }
+  footer {
+    padding-bottom: 5rem;
   }
 }
 
