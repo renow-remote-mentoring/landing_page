@@ -52,9 +52,6 @@ header .btn p {
 #bottomNav {
   display: none !important; }
 
-#mobileCTAbtns {
-  display: none !important; }
-
 #backToTop {
   display: none;
   /* Hidden by default */
