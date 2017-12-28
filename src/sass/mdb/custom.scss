@@ -233,16 +233,22 @@ header {
 //   cursor: auto;
 // }
 
+.w-30 {
+  width: 30%;
+}
+
 .mentorCard {
     position: relative;
-    width: 30%;
+    margin-top: 5rem;
     border-width: 2px;
     .view {
       height: auto;
     }
     border-color: #E0E0E0;
     border-style: solid;
-    img {
+    .avatar {
+      width: 96px;
+      height: 96px;
       border-color: $myPrime;
       border-width: 2px;
       border-style: solid;
@@ -261,6 +267,13 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+#mentorPageCover {
+  background-image: url("../img/cover/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #value {
@@ -395,9 +408,8 @@ footer {
   .order-3 {
     order: 2;
   }
-  .mentorCard {
-      width: 100%;
-      margin-top: 5rem;
+  .w-30 {
+    width: 100%;
   }
   .mc-field-group {
     margin-bottom: 1rem;

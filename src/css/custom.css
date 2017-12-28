@@ -181,15 +181,20 @@ header .btn p {
 .order-5 {
   order: 5; }
 
+.w-30 {
+  width: 30%; }
+
 .mentorCard {
   position: relative;
-  width: 30%;
+  margin-top: 5rem;
   border-width: 2px;
   border-color: #E0E0E0;
   border-style: solid; }
   .mentorCard .view {
     height: auto; }
-  .mentorCard img {
+  .mentorCard .avatar {
+    width: 96px;
+    height: 96px;
     border-color: #2C4F6C;
     border-width: 2px;
     border-style: solid;
@@ -201,6 +206,12 @@ header .btn p {
     font-size: 0.75rem; }
 
 #homeCover {
+  background-image: url("../img/cover/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#mentorPageCover {
   background-image: url("../img/cover/cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -302,9 +313,8 @@ footer p {
     order: 3; }
   .order-3 {
     order: 2; }
-  .mentorCard {
-    width: 100%;
-    margin-top: 5rem; }
+  .w-30 {
+    width: 100%; }
   .mc-field-group {
     margin-bottom: 1rem; }
   #value h1, #team h1, #partners h1 {
