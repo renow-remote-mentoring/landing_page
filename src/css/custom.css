@@ -221,6 +221,8 @@ header .btn p {
     top: -56px;
     left: 0;
     right: 0; }
+  .mentorCard .btn-rounded {
+    font-size: smaller; }
   .mentorCard p {
     font-size: 0.75rem; }
 
