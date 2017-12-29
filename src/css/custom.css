@@ -3,7 +3,8 @@
 html,
 body,
 .wide,
-.view {
+.view,
+.modal-content {
   height: 100%;
   font-family: 'Raleway', sans-serif;
   color: #2C4F6C;
@@ -35,6 +36,9 @@ p {
   font-size: 1.125rem;
   line-height: 1.5em;
   max-width: 35em; }
+
+header ul {
+  display: flex; }
 
 header .btn-rounded {
   font-size: 0.8rem; }
@@ -160,6 +164,9 @@ header .btn p {
 .myLightBlue-text {
   color: #BCD1E3 !important; }
 
+.myDarkBlue-text {
+  color: #213C52 !important; }
+
 .parallax {
   background-attachment: fixed; }
 
@@ -181,8 +188,20 @@ header .btn p {
 .order-5 {
   order: 5; }
 
+.tag {
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 1rem;
+  cursor: auto; }
+
 .w-30 {
   width: 30%; }
+
+.card-text {
+  line-height: 1.5rem; }
+
+.modal-body img {
+  height: 150px; }
 
 .mentorCard {
   position: relative;
@@ -332,6 +351,8 @@ footer p {
     display: none !important; }
   #bottomNav.scrolled {
     display: block !important; }
+  header ul {
+    display: none !important; }
   footer {
     padding-bottom: 5rem; } }
 

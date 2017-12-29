@@ -19,6 +19,7 @@ html,
 body,
 .wide,
 .view,
+.modal-content
  {
     height: 100%;
     font-family: 'Raleway', sans-serif;
@@ -58,6 +59,9 @@ p {
 }
 
 header {
+  ul {
+    display: flex;
+  }
   .btn-rounded {
     font-size: 0.8rem;
   }
@@ -199,6 +203,10 @@ header {
   color: $myLightBlue !important;
 }
 
+.myDarkBlue-text {
+  color: $myDarkBlue !important;
+}
+
 .parallax {
     background-attachment: fixed;
 }
@@ -226,15 +234,26 @@ header {
 .order-5 {
   order: 5;
 }
-// .tag {
-//   border-radius: 5px;
-//   box-shadow: none;
-//   font-size: 0.5rem;
-//   cursor: auto;
-// }
+
+.tag {
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 1rem;
+  cursor: auto;
+}
 
 .w-30 {
   width: 30%;
+}
+
+.card-text {
+  line-height: 1.5rem;
+}
+
+.modal-body {
+  img {
+    height: 150px;
+  }
 }
 
 .mentorCard {
@@ -439,6 +458,11 @@ footer {
   }
   #bottomNav.scrolled {
     display: block !important;
+  }
+  header {
+    ul {
+      display: none !important;
+    }
   }
   footer {
     padding-bottom: 5rem;
