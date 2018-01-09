@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.10.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:mime:20170907':
+    - critical > imageinliner > mime:
+        reason: None given
+        expires: '2018-02-08T14:26:53.073Z'
+    - critical > postcss-image-inliner > mime:
+        reason: None given
+        expires: '2018-02-08T14:26:53.074Z'
+    - critical > postcss-image-inliner > asset-resolver > mime:
+        reason: None given
+        expires: '2018-02-08T14:26:53.074Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - critical > postcss-image-inliner > asset-resolver > debug:
+        patched: '2018-01-09T14:23:48.648Z'
+    - critical > postcss-image-inliner > debug:
+        patched: '2018-01-09T14:23:48.648Z'
+  'npm:ms:20170412':
+    - critical > postcss-image-inliner > asset-resolver > debug > ms:
+        patched: '2018-01-09T14:23:48.648Z'
+    - critical > postcss-image-inliner > debug > ms:
+        patched: '2018-01-09T14:23:48.648Z'
