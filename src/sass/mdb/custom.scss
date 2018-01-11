@@ -499,5 +499,8 @@ footer {
 @media (min-width: 776px) {
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
+  .h2-responsive {
+    font-size: 160%;
+  }
 }

@@ -371,3 +371,7 @@ footer p {
     /*display: none;*/ }
     #subscribe h3 {
       margin-bottom: 1rem; } }
+
+@media (min-width: 1200px) {
+  .h2-responsive {
+    font-size: 160%; } }
