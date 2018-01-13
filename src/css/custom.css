@@ -103,9 +103,6 @@ header .btn p {
   background-color: #2C4F6C; }
 
 .navbar-nav {
-  display: none !important; }
-
-.navbar-nav.scrolled {
   display: flex !important; }
 
 .navbar-brand {
@@ -206,6 +203,7 @@ header .btn p {
 .mentorCard {
   position: relative;
   margin-top: 5rem;
+  height: 85%;
   border-width: 2px;
   border-color: #E0E0E0;
   border-style: solid; }
@@ -321,6 +319,14 @@ footer h5 {
 footer p {
   font-size: 1rem; }
 
+#social_media_links a {
+  border-radius: 50%;
+  border-color: #FAFAFA;
+  border-style: solid;
+  overflow: hidden;
+  width: 47px;
+  height: 47px; }
+
 @media only screen and (max-width: 321px) {
   #nextSec {
     display: none !important; } }
@@ -328,7 +334,7 @@ footer p {
 @media only screen and (max-width: 767px) {
   .navbar-brand {
     margin: auto; }
-  .navbar-nav.scrolled {
+  .navbar-nav {
     display: none !important; }
   .h3-responsive {
     font-size: 1rem; }

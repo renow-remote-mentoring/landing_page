@@ -121,10 +121,6 @@ header {
 }
 
 .navbar-nav {
-  display: none !important;
-}
-
-.navbar-nav.scrolled {
   display: flex !important;
 }
 
@@ -259,6 +255,7 @@ header {
 .mentorCard {
     position: relative;
     margin-top: 5rem;
+    height: 85%;
     border-width: 2px;
     .view {
       height: auto;
@@ -411,6 +408,17 @@ footer {
   }
 }
 
+#social_media_links {
+  a {
+    border-radius: 50%;
+    border-color: $myBackground;
+    border-style: solid;
+    overflow: hidden;
+    width: 47px;
+    height: 47px;
+  }
+}
+
 @media only screen and (max-width: 321px) {
   #nextSec {
     display: none !important;
@@ -424,7 +432,7 @@ footer {
   .navbar-brand {
     margin: auto;
   }
-  .navbar-nav.scrolled {
+  .navbar-nav {
     display: none !important;
   }
   .h3-responsive {
