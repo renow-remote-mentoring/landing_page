@@ -10,7 +10,7 @@ new WOW().init();
 $(function () {
   $(document).scroll(function () {
     $nav.toggleClass('scrolled', $(this).scrollTop() > ($cover.height()-$nav.height()));
-    $navbarNav.toggleClass('scrolled', $(this).scrollTop() > ($cover.height()-$nav.height()));
+    // $navbarNav.toggleClass('scrolled', $(this).scrollTop() > ($cover.height()-$nav.height()));
     $bottomNav.toggleClass('scrolled', $(this).scrollTop() > ($cover.height()-$nav.height()));
     $top.toggleClass('scrolled', $(this).scrollTop() > ($cover.height()-$nav.height()));
     $nextSec.toggleClass('scrolled', $(this).scrollTop() > 0);
