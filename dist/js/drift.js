@@ -17,4 +17,12 @@
   });
 }();
 drift.SNIPPET_VERSION = '0.3.1';
-drift.load('4guemmn3trhm');
+drift.load('e32rmse4z4yy');
+drift.on("ready", api => {
+ api.widget.hide()
+
+ if (window.innerWidth >= 780) {
+  api.widget.show()
+ }
+
+});
