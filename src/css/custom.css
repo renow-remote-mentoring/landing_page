@@ -221,7 +221,9 @@ header .btn p {
     right: 0; }
   .mentorCard .btn-rounded {
     font-size: smaller; }
-  .mentorCard p {
+  .mentorCard .modal-toggle:hover {
+    border-bottom: 2px solid #2C4F6C; }
+  .mentorCard h6 {
     font-size: 0.75rem; }
 
 #homeCover {

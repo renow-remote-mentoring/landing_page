@@ -276,10 +276,10 @@ header {
     .btn-rounded {
       font-size: smaller;
     }
-    // .h5-responsive {
-    //   font-size: medium;
-    // }
-    p {
+    .modal-toggle:hover {
+      border-bottom: 2px solid $myPrime;
+    }
+    h6 {
       font-size: 0.75rem;
     }
 }
