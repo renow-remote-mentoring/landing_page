@@ -41,7 +41,7 @@ header ul {
   display: flex; }
 
 header .btn-rounded {
-  font-size: 0.8rem; }
+  font-size: 1rem; }
 
 header .btn p {
   font-weight: 300 !important;
@@ -130,6 +130,9 @@ header .btn p {
 
 .bc-myDarkBlue {
   background-color: #213C52 !important; }
+
+.bc-myBrown {
+  background-color: #F2F2F2; }
 
 .btn-rounded {
   border-radius: 1000rem;
@@ -223,6 +226,16 @@ header .btn p {
     font-size: smaller; }
   .mentorCard .modal-toggle:hover {
     border-bottom: 2px solid #2C4F6C; }
+  .mentorCard .modal-dialog {
+    max-width: 10000px;
+    width: 65%; }
+  .mentorCard .close {
+    font-size: 3rem;
+    font-weight: 350;
+    line-height: 0.5;
+    position: absolute;
+    top: 0;
+    right: 0; }
   .mentorCard h6 {
     font-size: 0.75rem; }
 

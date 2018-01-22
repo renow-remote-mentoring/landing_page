@@ -4,7 +4,9 @@ $mySecondary: #A3CCC7;
 $myOrange: #F6D8AE;
 $myLightBlue: #BCD1E3;
 $myDarkBlue: #213C52;
+$myBrown: #F2F2F2;
 $myBackground: #FAFAFA;
+$myBorderColor: #E0E0E0;
 
 $titleFont-size: 1.25rem;
 $titleLine-height: 1.4;
@@ -63,7 +65,7 @@ header {
     display: flex;
   }
   .btn-rounded {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .btn {
     p {
@@ -158,6 +160,10 @@ header {
 
 .bc-myDarkBlue {
   background-color: $myDarkBlue !important;
+}
+
+.bc-myBrown {
+  background-color: $myBrown;
 }
 
 .btn-rounded {
@@ -260,7 +266,7 @@ header {
     .view {
       height: auto;
     }
-    border-color: #E0E0E0;
+    border-color: $myBorderColor;
     border-style: solid;
     .avatar {
       width: 96px;
@@ -278,6 +284,18 @@ header {
     }
     .modal-toggle:hover {
       border-bottom: 2px solid $myPrime;
+    }
+    .modal-dialog {
+      max-width: 10000px;
+      width: 65%;
+    }
+    .close {
+      font-size: 3rem;
+      font-weight: 350;
+      line-height: 0.5;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
     h6 {
       font-size: 0.75rem;
