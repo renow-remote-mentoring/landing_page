@@ -220,6 +220,10 @@ header .btn p {
   border-right: 0;
   padding-top: 1rem; }
 
+.modal-body .wh-150 {
+  width: 150px !important;
+  height: 150px !important; }
+
 .modal-body .avatar {
   width: 80px !important;
   height: 80px !important;
