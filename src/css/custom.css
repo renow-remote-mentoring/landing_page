@@ -413,6 +413,8 @@ footer p {
     display: none !important; }
   #bottomNav.scrolled {
     display: block !important; }
+  #drift-widget {
+    display: none; }
   header ul {
     display: none !important; }
   footer {
