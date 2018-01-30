@@ -8,12 +8,6 @@ $myBrown: #F2F2F2;
 $myBackground: #FAFAFA;
 $myBorderColor: #E0E0E0;
 
-$titleFont-size: 1.25rem;
-$titleLine-height: 1.4;
-$subtitleFont-size: 2rem;
-$paragraphFont-size: 1.125rem;
-$paragraphLine-height: 1.5em;
-
 /* YOUR CUSTOM STYLES */
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
@@ -25,6 +19,7 @@ body,
  {
     height: 100%;
     font-family: 'Raleway', sans-serif;
+    font-variant-numeric: lining-nums;
     color: $myPrime;
     -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -49,39 +44,81 @@ h4,
 h5,
 h6 {
   max-width: 25em;
-  line-height: $titleLine-height;
+  // line-height: $titleLine-height;
+}
+
+h1, h1-responsive {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+h2, h2-responsive {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h3, h3-responsive {
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+h4, h4-responsive {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+h5, h5-responsive {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+h6, h6-responsive {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-size: $paragraphFont-size;
-  line-height: $paragraphLine-height;
+  font-size: 18px;
+  line-height: 24px;
   max-width: 35em;
+}
+
+.small-text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 header {
   ul {
     display: flex;
   }
-  .btn-rounded {
-    font-size: 1rem;
-  }
-  .btn {
-    p {
-      font-weight: 300 !important;
-      text-transform: none !important;
-    }
-  }
+  // .btn-rounded {
+  //   font-size: 1rem;
+  // }
+  // .btn {
+  //   p {
+  //     font-weight: 300 !important;
+  //     text-transform: none !important;
+  //   }
+  // }
 }
 
-.h3-responsive {
-  font-size: $titleFont-size;
-}
-
-.h1-responsive {
-  font-size: $subtitleFont-size;
-}
+// .h3-responsive {
+//   font-size: $titleFont-size;
+// }
+//
+// .h1-responsive {
+//   font-size: $subtitleFont-size;
+// }
 
 .rounded-md-right {
     border-top-right-radius: .25rem!important;
@@ -259,7 +296,7 @@ header {
 
 .modal-body {
   p {
-    font-size: 0.875rem;
+    font-size: 0.875rem !important;
   }
   h5 {
     font-size: 1rem;
@@ -321,8 +358,11 @@ header {
       top: 0;
       right: 0;
     }
-    h6 {
-      font-size: 0.75rem;
+    p {
+      font-size: 16px;
+    }
+    .small-text {
+      font-size: 12px;
     }
 }
 
@@ -539,7 +579,7 @@ footer {
     display: block !important;
   }
   #drift-widget {
-    display: none;
+    display: none !important;
   }
   header {
     ul {
@@ -562,6 +602,9 @@ footer {
         h3 {
           margin-bottom: 1rem;
         }
+        h4 {
+          padding-bottom: 0 !important;
+        }
     }
 
 }
@@ -570,7 +613,13 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  .h1-responsive {
+    font-size: 200%;
+  }
   .h2-responsive {
     font-size: 160%;
+  }
+  .h4-responsive {
+    font-size: 125%;
   }
 }

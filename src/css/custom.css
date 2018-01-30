@@ -7,6 +7,7 @@ body,
 .modal-content {
   height: 100%;
   font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
   color: #2C4F6C;
   -webkit-font-smoothing: subpixel-antialiased; }
 
@@ -27,31 +28,52 @@ h3,
 h4,
 h5,
 h6 {
-  max-width: 25em;
-  line-height: 1.4; }
+  max-width: 25em; }
+
+h1, h1-responsive {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px; }
+
+h2, h2-responsive {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px; }
+
+h3, h3-responsive {
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 23px; }
+
+h4, h4-responsive {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px; }
+
+h5, h5-responsive {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px; }
+
+h6, h6-responsive {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px; }
 
 p {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.5em;
+  font-size: 18px;
+  line-height: 24px;
   max-width: 35em; }
+
+.small-text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px; }
 
 header ul {
   display: flex; }
-
-header .btn-rounded {
-  font-size: 1rem; }
-
-header .btn p {
-  font-weight: 300 !important;
-  text-transform: none !important; }
-
-.h3-responsive {
-  font-size: 1.25rem; }
-
-.h1-responsive {
-  font-size: 2rem; }
 
 .rounded-md-right {
   border-top-right-radius: 0.25rem !important;
@@ -206,7 +228,7 @@ header .btn p {
   line-height: 1.5rem; }
 
 .modal-body p {
-  font-size: 0.875rem; }
+  font-size: 0.875rem !important; }
 
 .modal-body h5 {
   font-size: 1rem; }
@@ -260,8 +282,10 @@ header .btn p {
     position: absolute;
     top: 0;
     right: 0; }
-  .mentorCard h6 {
-    font-size: 0.75rem; }
+  .mentorCard p {
+    font-size: 16px; }
+  .mentorCard .small-text {
+    font-size: 12px; }
 
 #homeCover {
   background-image: url("../img/cover/cover.jpg");
@@ -414,7 +438,7 @@ footer p {
   #bottomNav.scrolled {
     display: block !important; }
   #drift-widget {
-    display: none; }
+    display: none !important; }
   header ul {
     display: none !important; }
   footer {
@@ -428,8 +452,14 @@ footer p {
     background-color: #F6D8AE;
     /*display: none;*/ }
     #subscribe h3 {
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+    #subscribe h4 {
+      padding-bottom: 0 !important; } }
 
 @media (min-width: 1200px) {
+  .h1-responsive {
+    font-size: 200%; }
   .h2-responsive {
-    font-size: 160%; } }
+    font-size: 160%; }
+  .h4-responsive {
+    font-size: 125%; } }
