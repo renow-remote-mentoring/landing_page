@@ -63,7 +63,7 @@
     <!-- Drift -->
     <script async type="text/javascript" src="js/drift.js"></script>
     <!-- mailChimp -->
-    <script async type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';fnames[4]='MMERGE4';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+    <script async type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';fnames[4]='MMERGE4';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
     </script>
     <!--Google Analytics-->
     <script async type="text/javascript" src="js/gtag.js"></script>
@@ -83,7 +83,7 @@
     <header class="wide">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar d-flex justify-content-between align-items-center z-depth-0">
         <div class="container">
-          <a class="navbar-brand d-flex align-self-center font-bold" href="index.html">
+          <a class="navbar-brand d-flex align-self-center font-weight-bold" href="index.html">
             RE.NOW
           </a>
           <div class="align-items-center" id="navbarSupportedContent">
@@ -188,6 +188,7 @@
                   <h5 class="feature-title my-5">Pay as you go</h5>
                 </a>
               </div>
+            </div>
           </section>
       </div>
       <!--Section: howItWorks-->
@@ -235,6 +236,7 @@
                     <p class="feature-title mt-md-3">Connect with your mentor on a one-on-one video call and start your remote journey</p>
                   </div>
                 </div>
+              </div>
             </section>
             <!-- <a class="typeform-share btn letter-spacing-2 font-weight-bold bc-myPrime myBackground-text btn-rounded btn-lg mt-3 mb-5 wow fadeIn" href="https://re-now.typeform.com/to/KTbS6d" data-mode="popup" style="font-size: larger;" target="_blank" data-wow-delay="0.3s">JOIN AS A MENTEE</a> -->
             <a href="mentor.html" class="btn bc-myPrime btn-rounded btn-lg wow fadeIn font-weight-bold letter-spacing-3 my-5" data-wow-delay="0.3s" rel="nofollow" style="font-size: larger">Choose your mentor</a>
@@ -254,19 +256,69 @@
             <section class="text-center">
               <div class="d-md-flex justify-content-around features-big px-3">
                 <div class="m-md-2 w-30">
-                  <div class="mentorCard grey-border w-100 p-3 wow fadeIn" data-wow-delay="0.2s">
-                    <!-- <img src="./img/mentors/AndrePineiro.jpg" class="img-fluid avatar blue-border  rounded mx-auto" alt="Andre Pineiro - Work and lifestyle coach"> -->
-                    <a class="" data-toggle="modal" data-target="#4cf7ad1b3e">
-                      <div class="view overlay hm-white-strong avatar blue-border  rounded mx-auto">
-                        <img src="./img/mentors/AndrePineiro.jpg" class="img-fluid " alt="Andre Pineiro - Work and lifestyle coach">
-                        <div class="mask flex-center waves-effect waves-light">
-                          <p class="myPrime-text font-weight-bold">View</p>
+                  <div class="mentorCard grey-border d-flex flex-column justify-content-between w-100 p-3 wow fadeIn" data-wow-delay="0.2s">
+                    <img src="./img/mentors/Andres Pineiro.jpg" class="img-fluid avatar blue-border  rounded mx-auto" alt="Andre Pineiro - Work and lifestyle coach">
+                    <div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="4cf7ad1b3e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-notify" role="document">
+                            <div class="modal-content">
+                                <div class="my-modal-header">
+                                    <h2 class="h2-responsive font-bold my-3 mx-md-auto text-md-center text-left w-75">Confirm interest for this mentor</h2>
+                                    <button type="button" class="m-2 close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="myPrime-text">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body py-0 mx-3">
+                                  <div class="d-md-flex myPrime-text">
+                                    <div class="blue-border rounded d-md-block d-none">
+                                      <img src="./img/mentors/Andres Pineiro.jpg" class="wh-150" alt="Andre Pineiro - Work and lifestyle coach">
+                                    </div>
+                                    <div class="bc-myBrown grey-border px-3 text-left w-45">
+                                      <div class="blue-border rounded d-block d-md-none avatar ml-3">
+                                        <img src="./img/mentors/Andres Pineiro.jpg" class="img-fluid" alt="Andre Pineiro - Work and lifestyle coach">
+                                      </div>
+                                      <h5 class="h5-responsive font-weight-bold">Andrés Piñeiro</h5>
+                                      <p>A traveller since the age of 17, fully sponsored by companies willing to pay for his dreams to come true!</p>
+                                    </div>
+                                    <div class="px-3 pt-3 pb-0 w-35 grey-border rounded-md-right d-flex flex-column justify-content-between">
+                                      <h5 class="feature-title h5-responsive text-left">How to find brands or people, willing to sponsor your projects.</h5>
+                                      <div class="d-flex align-items-baseline">
+                                        <h1 class="h1-responsive font-bold mr-1">75$</h1><p> /session</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer flex-column p-4">
+                                    <div class="text-center w-45 my-3 mx-auto">
+                                      <p class="h5-responsive">Can't wait to learn from Andrés Piñeiro?</p>
+                                      <!-- <p class="h5-responsive">You will join a waiting list, so that you'll get notified and be able to book your first session when we launched.</p> -->
+                                    </div>
+                                    <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" aria-label="Close" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Andr%C3%A9s+Pi%C3%B1eiro&entry.1107392353" target="_blank">Sign me up</a>
+                                </div>
+                            </div>
                         </div>
                       </div>
-                    </a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="4cf7ad1b3e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-notify" role="document">
+                      <div class="myPrime-text">
+                        <h4 class="h4-responsive font-weight-bold mt-5">
+                          Andrés Piñeiro
+                        </h4>
+                        <p class="feature-title h6-responsive mx-auto my-3 letter-spacing-1 text-left">A traveller since the age of 17, fully sponsored by companies willing to pay for his dreams to come true!</p>
+                        <h6 class="mx-auto text-left mb-4">
+                          <p class="small-text letter-spacing-1 myPrime-text">Remote tools | Remote experience | Relocation and travel | Freelancing | Payment and billing | Sponsourships</p>
+                        </h6>
+                      </div>
+                    </div>
+                    <a class="modal-toggle d-table mx-auto font-weight-bold text-uppercase letter-spacing-3" data-toggle="modal" data-target="#4cf7ad1b3e">Register interest</a>
+                  </div>
+                </div>
+                <div class="m-md-2 w-30">
+                  <div class="mentorCard grey-border d-flex flex-column justify-content-between w-100 p-3 wow fadeIn" data-wow-delay="0.2s">
+                    <img src="./img/mentors/Pete Hillman.jpg" class="img-fluid avatar blue-border  rounded mx-auto" alt="Pete Hilman - Web design creativity and adventure guide">
+                    <div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="b3bb0c9e48" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-notify" role="document">
                           <div class="modal-content">
                               <div class="my-modal-header">
                                   <h2 class="h2-responsive font-bold my-3 mx-md-auto text-md-center text-left w-75">Confirm interest for this mentor</h2>
@@ -277,184 +329,106 @@
                               <div class="modal-body py-0 mx-3">
                                 <div class="d-md-flex myPrime-text">
                                   <div class="blue-border rounded d-md-block d-none">
-                                    <img src="./img/mentors/AndrePineiro.jpg" class="wh-150" alt="Andre Pineiro - Work and lifestyle coach">
+                                    <img src="./img/mentors/Pete Hillman.jpg" class="wh-150" alt="Pete Hilman - Web design creativity and adventure guide">
                                   </div>
                                   <div class="bc-myBrown grey-border px-3 text-left w-45">
                                     <div class="blue-border rounded d-block d-md-none avatar ml-3">
-                                      <img src="./img/mentors/AndrePineiro.jpg" class="img-fluid" alt="Andre Pineiro - Work and lifestyle coach">
+                                      <img src="./img/mentors/Pete Hillman.jpg" class="img-fluid " alt="Pete Hilman - Web design creativity and adventure guide">
                                     </div>
-                                    <h3 class="h3-responsive font-weight-bold">Andrés Piñeiro</h3>
-                                    <p>At the age of 17, I began traveling. Since then, my travels had been fully sponsored. Companies are willing to pay for your dreams to come true, let me show you how I do it.</p>
+                                    <h5 class="h5-responsive font-weight-bold">Pete Hillman</h5>
+                                    <p>Forty-something digital creative with over 22 years of being a digital nomad and more than 32 years of being a world traveller and guide</p>
                                   </div>
                                   <div class="px-3 pt-3 pb-0 w-35 grey-border rounded-md-right d-flex flex-column justify-content-between">
-                                    <h5 class="feature-title h5-responsive text-left">How to find brands or people, willing to sponsor your projects.</h5>
+                                    <h5 class="feature-title h5-responsive text-left">Prepping for a transitional lifestyle of leaving, travel and arrival</h5>
                                     <div class="d-flex align-items-baseline">
-                                      <h1 class="h1-responsive font-bold mr-1">75$</h1><p> /session</p>
+                                      <h1 class="h1-responsive font-bold mr-1">50$~100$</h1><p> /session</p>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                               <div class="modal-footer flex-column p-4">
-                                  <div class="text-left w-45 my-3 mx-auto">
-                                    <p class="h5-responsive">Can't wait to learn from Andrés Piñeiro?</p>
+                                  <div class="text-center w-45 my-3 mx-auto">
+                                    <p class="h5-responsive">Can't wait to learn from Pete Hillman?</p>
                                     <!-- <p class="h5-responsive">You will join a waiting list, so that you'll get notified and be able to book your first session when we launched.</p> -->
                                   </div>
-                                  <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" data-dismiss="modal" aria-label="Close" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Andr%C3%A9s+Pi%C3%B1eiro" target="_blank">Sign me up</a>
+                                  <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" aria-label="Close" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Pete+Hillman&entry.1107392353" target="_blank">Sign me up</a>
                               </div>
                           </div>
+                        </div>
+                      </div>
+                      <div class="myPrime-text">
+                        <h4 class="h4-responsive font-weight-bold mt-5">
+                          Pete Hillman
+                        </h4>
+
+                        <p class="feature-title h6-responsive mx-auto my-3 letter-spacing-1 text-left">Forty-something digital creative with over 22 years of being a digital nomad and more than 32 years of being a world traveller and guide</p>
+                        <h6 class="mx-auto text-left mb-4">
+                          <p class="small-text letter-spacing-1 myPrime-text">Remote tools | Remote culture | Relocation and travel | Nomad communities | Freelancing</p>
+                        </h6>
                       </div>
                     </div>
-                    <div class="myPrime-text">
-                      <h4 class="h4-responsive font-weight-bold mt-5">
-                        Andrés Piñeiro
-                      </h4>
-                      <p class="feature-title h6-responsive mx-auto my-3 letter-spacing-1 text-left">At the age of 17, I began traveling. Since then, my travels had been fully sponsored. Companies are willing to pay for your dreams to come true, let me show you how I do it.</p>
-                      <h6 class="mx-auto text-left mb-4">
-                        <a href="#" class="letter-spacing-1 myPrime-text">Remote tools | </a>
-                        <a href="#" class="letter-spacing-1 myPrime-text">Remote experience | </a>
-                        <a href="#" class="letter-spacing-1 myPrime-text">Relocation and travel | </a>
-                        <a href="#" class="letter-spacing-1 myPrime-text">Freelancing | </a>
-                        <a href="#" class="letter-spacing-1 myPrime-text">Payment and billing | </a>
-                        <a href="#" class="letter-spacing-1 myPrime-text">Sponsourships</a>
-                      </h6>
-                      <a class="modal-toggle font-weight-bold text-uppercase letter-spacing-3" data-toggle="modal" data-target="#4cf7ad1b3e">I'm interested</a>
-                    </div>
+                    <a class="modal-toggle d-table mx-auto font-weight-bold text-uppercase letter-spacing-3" data-toggle="modal" data-target="#b3bb0c9e48">Register interest</a>
                   </div>
                 </div>
                 <div class="m-md-2 w-30">
-                  <div class="mentorCard grey-border w-100 p-3 wow fadeIn" data-wow-delay="0.2s">
-                    <!-- <img src="./img/mentors/PeteHilman.png" class="img-fluid avatar blue-border  rounded mx-auto" alt="Pete Hilman - Web design creativity and adventure guide"> -->
-                    <a class="" data-toggle="modal" data-target="#b3bb0c9e48">
-                      <div class="view overlay hm-white-strong avatar blue-border  rounded mx-auto">
-                        <img src="./img/mentors/PeteHilman.png" class="img-fluid " alt="Pete Hilman - Web design creativity and adventure guide">
-                        <div class="mask flex-center waves-effect waves-light">
-                          <p class="myPrime-text font-weight-bold">View</p>
-                        </div>
-                      </div>
-                    </a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="b3bb0c9e48" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-notify" role="document">
-                        <div class="modal-content">
-                            <div class="my-modal-header">
-                                <h2 class="h2-responsive font-bold my-3 mx-md-auto text-md-center text-left w-75">Confirm interest for this mentor</h2>
-                                <button type="button" class="m-2 close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true" class="myPrime-text">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body py-0 mx-3">
-                              <div class="d-md-flex myPrime-text">
-                                <div class="blue-border rounded d-md-block d-none">
-                                  <img src="./img/mentors/PeteHilman.png" class="wh-150" alt="Pete Hilman - Web design creativity and adventure guide">
-                                </div>
-                                <div class="bc-myBrown grey-border px-3 text-left w-45">
-                                  <div class="blue-border rounded d-block d-md-none avatar ml-3">
-                                    <img src="./img/mentors/PeteHilman.png" class="img-fluid " alt="Pete Hilman - Web design creativity and adventure guide">
+                  <div class="mentorCard grey-border d-flex flex-column justify-content-between w-100 p-3 wow fadeIn" data-wow-delay="0.2s">
+                    <img src="./img/mentors/CharlieBirch.jpg" class="img-fluid avatar blue-border  rounded mx-auto" alt="Charlie Birch - Event Planning - Retreat Program Development">
+                    <div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="59ceef3876" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-notify" role="document">
+                          <div class="modal-content">
+                              <div class="my-modal-header">
+                                  <h2 class="h2-responsive font-bold my-3 mx-md-auto text-md-center text-left w-75">Confirm interest for this mentor</h2>
+                                  <button type="button" class="m-2 close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true" class="myPrime-text">×</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body py-0 mx-3">
+                                <div class="d-md-flex myPrime-text">
+                                  <div class="blue-border rounded d-md-block d-none">
+                                    <img src="./img/mentors/CharlieBirch.jpg" class="wh-150 " alt="Charlie Birch - Event Planning - Retreat Program Development">
                                   </div>
-                                  <h3 class="h3-responsive font-weight-bold">Pete Hillman</h3>
-                                  <p>140-bio</p>
-                                </div>
-                                <div class="px-3 pt-3 pb-0 w-35 grey-border rounded-md-right d-flex flex-column justify-content-between">
-                                  <h5 class="feature-title h5-responsive text-left">primary session title</h5>
-                                  <div class="d-flex align-items-baseline">
-                                    <h1 class="h1-responsive font-bold mr-1">50$~100$</h1><p> /session</p>
+                                  <div class="bc-myBrown grey-border px-3 text-left w-45">
+                                    <div class="blue-border rounded d-block d-md-none avatar ml-3">
+                                      <img src="./img/mentors/CharlieBirch.jpg" class="img-fluid " alt="Charlie Birch - Event Planning - Retreat Program Development">
+                                    </div>
+                                    <h5 class="h5-responsive font-weight-bold">Charlie Birch</h5>
+                                    <p>Charlie has worked remotely for 6+ yrs. She has been a nomad and home-based; freelancer and business owner. Focus on remote networking.</p>
+                                  </div>
+                                  <div class="px-3 pt-3 pb-0 w-35 grey-border rounded-md-right d-flex flex-column justify-content-between">
+                                    <h5 class="feature-title h5-responsive text-left">Making Remote Work a Reality When You Don't Work in Tech?</h5>
+                                    <div class="d-flex align-items-baseline">
+                                      <h1 class="h1-responsive font-bold mr-1">50$</h1><p> /session</p>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                            <div class="modal-footer flex-column p-4">
-                                <div class="text-left w-45 my-3 mx-auto">
-                                  <p class="h5-responsive">Can't wait to learn from Pete Hillman?</p>
-                                  <!-- <p class="h5-responsive">You will join a waiting list, so that you'll get notified and be able to book your first session when we launched.</p> -->
-                                </div>
-                                <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" data-dismiss="modal" aria-label="Close" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Pete+Hillman" target="_blank">Sign me up</a>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="myPrime-text">
-                      <h4 class="h4-responsive font-weight-bold mt-5">
-                        Pete Hillman
-                      </h4>
-                      <!-- <h6 class="feature-title mx-auto mt-1 letter-spacing-1 myLightBlue-text font-weight-bold">.*</h6> -->
-                      <p class="feature-title h6-responsive mx-auto my-3 letter-spacing-1 text-left">140-bio</p>
-                      <h6 class="mx-auto text-left mb-4">
-                        <a href="#" class="letter-spacing-1 myPrime-text">Remote tools | </a>
-                        <a href="#" class="letter-spacing-1 myPrime-text">Remote culture, </a>
-                        <a href="#" class="letter-spacing-1 myPrime-text">Relocation and travel | </a>
-                        <a href="#" class="letter-spacing-1 myPrime-text">nomad communities | </a>
-                        <a href="#" class="letter-spacing-1 myPrime-text">Freelancing</a>
-                      </h6>
-                      <a class="modal-toggle font-weight-bold text-uppercase letter-spacing-3" data-toggle="modal" data-target="#b3bb0c9e48">I'm interested</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="m-md-2 w-30">
-                  <div class="mentorCard grey-border w-100 p-3 wow fadeIn" data-wow-delay="0.2s">
-                    <!-- <img src="./img/mentors/CharlieBirch.jpg" class="img-fluid avatar blue-border  rounded mx-auto" alt="Charlie Birch - Event Planning - Retreat Program Development"> -->
-                    <a class="" data-toggle="modal" data-target="#59ceef3876">
-                      <div class="view overlay hm-white-strong avatar blue-border  rounded mx-auto">
-                        <img src="./img/mentors/CharlieBirch.jpg" class="img-fluid " alt="Charlie Birch - Event Planning - Retreat Program Development">
-                        <div class="mask flex-center waves-effect waves-light">
-                          <p class="myPrime-text font-weight-bold">View</p>
-                        </div>
-                      </div>
-                    </a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="59ceef3876" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-notify" role="document">
-                        <div class="modal-content">
-                            <div class="my-modal-header">
-                                <h2 class="h2-responsive font-bold my-3 mx-md-auto text-md-center text-left w-75">Confirm interest for this mentor</h2>
-                                <button type="button" class="m-2 close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true" class="myPrime-text">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body py-0 mx-3">
-                              <div class="d-md-flex myPrime-text">
-                                <div class="blue-border rounded d-md-block d-none">
-                                  <img src="./img/mentors/CharlieBirch.jpg" class="wh-150 " alt="Charlie Birch - Event Planning - Retreat Program Development">
-                                </div>
-                                <div class="bc-myBrown grey-border px-3 text-left w-45">
-                                  <div class="blue-border rounded d-block d-md-none avatar ml-3">
-                                    <img src="./img/mentors/CharlieBirch.jpg" class="img-fluid " alt="Charlie Birch - Event Planning - Retreat Program Development">
+                              <div class="modal-footer flex-column p-4">
+                                  <div class="text-center w-45 my-3 mx-auto">
+                                    <p class="h5-responsive">Can't wait to learn from Charlie Birch?</p>
+                                    <!-- <p class="h5-responsive">You will join a waiting list, so that you'll get notified and be able to book your first session when we launched.</p> -->
                                   </div>
-                                  <h3 class="h3-responsive font-weight-bold">Charlie Birch</h3>
-                                  <p>140-bio</p>
-                                </div>
-                                <div class="px-3 pt-3 pb-0 w-35 grey-border rounded-md-right d-flex flex-column justify-content-between">
-                                  <h5 class="feature-title h5-responsive text-left">primary session title</h5>
-                                  <div class="d-flex align-items-baseline">
-                                    <h1 class="h1-responsive font-bold mr-1">50$</h1><p> /session</p>
-                                  </div>
-                                </div>
+                                  <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" aria-label="Close" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Charlie+Birch&entry.1107392353" target="_blank">Sign me up</a>
                               </div>
-                            </div>
-                            <div class="modal-footer flex-column p-4">
-                                <div class="text-left w-45 my-3 mx-auto">
-                                  <p class="h5-responsive">Can't wait to learn from Charlie Birch?</p>
-                                  <!-- <p class="h5-responsive">You will join a waiting list, so that you'll get notified and be able to book your first session when we launched.</p> -->
-                                </div>
-                                <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" data-dismiss="modal" aria-label="Close" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Charlie+Birch" target="_blank">Sign me up</a>
-                            </div>
+                          </div>
                         </div>
                       </div>
+                      <div class="myPrime-text">
+                        <h4 class="h4-responsive font-weight-bold mt-5">
+                          Charlie Birch
+                        </h4>
+
+                        <p class="feature-title h6-responsive mx-auto my-3 letter-spacing-1 text-left">Charlie has worked remotely for 6+ yrs. She has been a nomad and home-based; freelancer and business owner. Focus on remote networking.</p>
+                        <h6 class="mx-auto text-left mb-4">
+                          <p class="small-text letter-spacing-1 myPrime-text">Remote tools | Remote experience | Remote culture</p>
+                        </h6>
+                      </div>
                     </div>
-                    <div class="myPrime-text">
-                      <h4 class="h4-responsive font-weight-bold mt-5">
-                        Charlie Birch
-                      </h4>
-                      <!-- <h6 class="feature-title mx-auto mt-1 letter-spacing-1 myLightBlue-text font-weight-bold">.*</h6> -->
-                      <p class="feature-title h6-responsive mx-auto my-3 letter-spacing-1 text-left">140-bio</p>
-                      <h6 class="mx-auto text-left mb-4">
-                        <a href="#" class="letter-spacing-1 myPrime-text">Remote tools | </a>
-                        <a href="#" class="letter-spacing-1 myPrime-text">Remote experience | </a>
-                        <a href="#" class="letter-spacing-1 myPrime-text">Remote culture</a>
-                      </h6>
-                      <a class="modal-toggle font-weight-bold text-uppercase letter-spacing-3" data-toggle="modal" data-target="#59ceef3876">I'm interested</a>
-                    </div>
+                    <a class="modal-toggle d-table mx-auto font-weight-bold text-uppercase letter-spacing-3" data-toggle="modal" data-target="#59ceef3876">Register interest</a>
                   </div>
                 </div>
+              </div>
             </section>
             <a href="mentor.html" class="btn bc-myPrime btn-rounded btn-lg wow fadeIn font-weight-bold letter-spacing-3 my-5" data-wow-delay="0.3s" rel="nofollow" style="font-size: larger">See all Mentors</a>
           </div>
@@ -520,6 +494,7 @@
                   <p class="feature-title mt-5">Italian currently travelling the world while pushing pixels and surfing waves. Andrea deeply cares about sustainability and helping people become location independent</p>
                 </div>
               </div>
+            </div>
           </section>
           <p class="h5-responsive text-center wow fadeIn my-5 font-weight-bold" data-wow-delay="0.2s">We are looking to expand our passionate, hard-working and distributed team who are presently building Re.Now. </p>
           <a class="btn letter-spacing-2 font-weight-bold bc-myPrime myBackground-text btn-rounded btn-lg mt-3 mb-5 wow fadeIn" href="https://angel.co/re-now/jobs" style="font-size: larger;" target="angel.co" data-wow-delay="0.3s">WORK WITH US</a>
@@ -535,8 +510,7 @@
                   <form action="https://twitter.us17.list-manage.com/subscribe/post?u=f60b98742ea16328f6aa5d512&amp;id=b8c769c247" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                       <div id="mc_embed_signup_scroll" class="md-form d-flex flex-column align-items-center">
                         <div class="mc-field-group p-0 w-100">
-                          <input type="email" value="" placeholder="Your email" name="EMAIL" class="required email" id="mce-EMAIL">
-                          </input>
+                          <input type="email" value="" placeholder="Your email" name="EMAIL" class="required email" id="mce-EMAIL" />
                         </div>
                         <div id="mce-responses" class="clear d-none">
                           <div class="response d-none" id="mce-error-response"></div>
