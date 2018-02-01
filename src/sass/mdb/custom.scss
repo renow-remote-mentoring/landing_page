@@ -97,6 +97,12 @@ p {
   line-height: 20px;
 }
 
+.btn {
+  .fa {
+    font-size: 1.5rem;
+  }
+}
+
 header {
   ul {
     display: flex;
@@ -132,13 +138,15 @@ header {
 #backToTop {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
+    bottom: 24px; /* Place the button at the bottom of the page */
     left: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     background-color: $myPrime; /* Set a background color */
     color: $myBackground; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
+    width: 52px;
+    height: 52px;
 }
 
 #backToTop.scrolled {
@@ -595,9 +603,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    .h5-responsive {
-        font-size: 100%;
-    }
     #subscribe {
         /*background-image: url("../img/cover/.jpg");*/
         background-color: $myOrange;
@@ -609,10 +614,48 @@ footer {
           padding-bottom: 0 !important;
         }
     }
-
 }
 
 @media (min-width: 776px) {
+  .h1-responsive {
+    font-size: 200%;
+  }
+  .h2-responsive {
+    font-size: 160%;
+  }
+  .h3-responsive {
+    font-size: 125%;
+  }
+  .h4-responsive {
+    font-size: 125%;
+  }
+  .h5-responsive {
+    font-size: 100%;
+  }
+  .h6-responsive {
+    font-size: 87.5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .h1-responsive {
+    font-size: 200%;
+  }
+  .h2-responsive {
+    font-size: 160%;
+  }
+  .h3-responsive {
+    font-size: 125%;
+  }
+  .h4-responsive {
+    font-size: 125%;
+  }
+  .h5-responsive {
+    font-size: 100%;
+  }
+  .h6-responsive {
+    font-size: 87.5%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -622,7 +665,16 @@ footer {
   .h2-responsive {
     font-size: 160%;
   }
+  .h3-responsive {
+    font-size: 125%;
+  }
   .h4-responsive {
     font-size: 125%;
+  }
+  .h5-responsive {
+    font-size: 100%;
+  }
+  .h6-responsive {
+    font-size: 87.5%;
   }
 }
