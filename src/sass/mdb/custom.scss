@@ -343,6 +343,9 @@ header {
       left: 0;
       right: 0;
     }
+    .modal-toggle {
+      height: 30px;
+    }
     .modal-toggle:hover {
       border-bottom: 2px solid $myPrime;
     }
