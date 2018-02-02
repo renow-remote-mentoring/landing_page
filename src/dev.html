@@ -83,20 +83,20 @@
     <header class="wide">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar d-flex justify-content-between align-items-center z-depth-0">
         <div class="container">
-          <a class="navbar-brand d-flex align-self-center font-weight-bold" href="index.html">
+          <a class="navbar-brand d-flex align-self-center font-weight-bold" href="index.html" onclick="navLinkTrack('Re.Now logo')">
             RE.NOW
           </a>
           <div class="align-items-center" id="navbarSupportedContent">
               <div class="mr-auto"></div>
               <ul class="navbar-nav text-uppercase flex-row animated fadeIn">
                   <li class="nav-item mx-5 my-auto">
-                      <a class="nav-link font-weight-bold text-uppercase letter-spacing-2 p-0 typeform-share" data-mode="popup" target="_blank" href="https://re-now.typeform.com/to/W23F0v">Join as a mentor</a>
+                      <a class="nav-link font-weight-bold text-uppercase letter-spacing-2 p-0 typeform-share" data-mode="popup" target="_blank" onclick="navLinkTrack('Join as a mentor')" href="https://re-now.typeform.com/to/W23F0v">Join as a mentor</a>
                   </li>
                   <li class="nav-item mx-5 my-auto">
-                      <a class="nav-link font-weight-bold text-uppercase letter-spacing-2 p-0" href="mentor.html">See all mentors</a>
+                      <a class="nav-link font-weight-bold text-uppercase letter-spacing-2 p-0" href="mentor.html" onclick="navLinkTrack('See all mentors')">See all mentors</a>
                   </li>
                   <!-- <li class="nav-item">
-                      <a class="nav-link" href="faq.html">FAQs</a>
+                      <a class="nav-link" href="faq.html" onclick="navLinkTrack('FAQs')">FAQs</a>
                   </li> -->
               </ul>
           </div>
@@ -106,14 +106,13 @@
         <div id="deskCTAbtns" class="animated fadeInUp container pt-5 mt-5">
           <h1 class="h1-responsive white-text font-weight-bold text-center letter-spacing-1 my-5 py-5 mx-auto">Learn from experienced remote workers to start your location independent life</h1>
           <div class="flex-center">
-            <a class="my-5 mx-auto button btn bc-myBackground btn-rounded myPrime-text" href="mentor.html">
+            <a class="my-5 mx-auto button btn bc-myBackground btn-rounded myPrime-text" href="mentor.html" onclick="homePageLinkTrack('Mentees, choose your mentors')">
               <div class="flex-center flex-column text-center mx-5">
                 <h5 class="h5-responsive font-weight-bold text-uppercase letter-spacing-3">mentees</h5>
                 <p>Choose your mentors</p>
-
               </div>
             </a>
-            <a class="typeform-share my-5 mx-auto button btn bc-myPrime btn-rounded" href="https://re-now.typeform.com/to/W23F0v" data-mode="popup" target="_blank">
+            <a class="typeform-share my-5 mx-auto button btn bc-myPrime btn-rounded" onclick="homePageLinkTrack('Mentors, join us and start coaching')" href="https://re-now.typeform.com/to/W23F0v" data-mode="popup" target="_blank">
               <div class="flex-center flex-column text-center mx-5">
                 <h5 class="h5-responsive font-weight-bold text-uppercase letter-spacing-3">mentors</h5>
                 <p>Join us and start coaching</p>
@@ -123,8 +122,8 @@
         </div>
         <div id="mobileCTAbtns" class="d-md-none container flex-center flex-column pt-5 mt-5">
           <h1 class="h1-responsive white-text font-weight-bold text-center letter-spacing-1">Learn from experienced remote workers to start your location independent life.</h1>
-          <a class="mt-5 letter-spacing-2 button btn bc-myBackground btn-rounded btn-lg myPrime-text font-weight-bold" href="https://goo.gl/forms/Pn5KvkDJyAwAF2KB2" style="font-size: larger;" target="_blank">JOIN AS A MENTEE</a>
-          <a class="typeform-share mt-5 letter-spacing-2 button btn bc-myPrime btn-rounded btn-lg font-weight-bold" href="https://re-now.typeform.com/to/W23F0v" data-mode="popup" style="font-size: larger;" target="_blank">BECOME A MENTOR</a>
+          <a class="mt-5 letter-spacing-2 button btn bc-myBackground btn-rounded btn-lg myPrime-text font-weight-bold" href="https://goo.gl/forms/Pn5KvkDJyAwAF2KB2" style="font-size: larger;" target="_blank" onclick="homePageLinkTrack('JOIN AS A MENTEE from mobile')">JOIN AS A MENTEE</a>
+          <a class="typeform-share mt-5 letter-spacing-2 button btn bc-myPrime btn-rounded btn-lg font-weight-bold" href="https://re-now.typeform.com/to/W23F0v" data-mode="popup" style="font-size: larger;" target="_blank" onclick="homePageLinkTrack('BECOME A MENTOR from mobile')">BECOME A MENTOR</a>
         </div>
         <button class="btn btn-rounded mySecondary-text smooth-scroll wow fadeInDown" data-wow-delay="0.2s" onclick="nextSecFunction()" id="nextSec" title="Go next section">
           <i class="fa fa-angle-double-down mx-1" aria-hidden="true"></i>
@@ -132,8 +131,8 @@
       </div>
       <div id="bottomNav" class="fixed-bottom bc-myPrime z-depth-0 animated fadeInUp">
         <div class="container d-flex justify-content-around">
-          <a class="btn bc-myDarkBlue white-text btn-rounded text-uppercase font-weight-bold typeform-share" href="https://re-now.typeform.com/to/W23F0v" data-mode="popup" target="_blank">Mentor sign-up</a>
-          <a class="btn bc-myBackground myPrime-text btn-rounded text-uppercase font-weight-bold" href="mentor.html">See all mentors</a>
+          <a class="btn bc-myDarkBlue white-text btn-rounded text-uppercase font-weight-bold typeform-share" href="https://re-now.typeform.com/to/W23F0v" data-mode="popup" target="_blank" onclick="navLinkTrack('Mentor sign-up from mobile')">Mentor sign-up</a>
+          <a class="btn bc-myBackground myPrime-text btn-rounded text-uppercase font-weight-bold" href="mentor.html" onclick="navLinkTrack('See all mentors from mobile')">See all mentors</a>
         </div>
       </div>
     </header>
@@ -239,7 +238,7 @@
               </div>
             </section>
             <!-- <a class="typeform-share btn letter-spacing-2 font-weight-bold bc-myPrime myBackground-text btn-rounded btn-lg mt-3 mb-5 wow fadeIn" href="https://re-now.typeform.com/to/KTbS6d" data-mode="popup" style="font-size: larger;" target="_blank" data-wow-delay="0.3s">JOIN AS A MENTEE</a> -->
-            <a href="mentor.html" class="btn bc-myPrime btn-rounded btn-lg wow fadeIn font-weight-bold letter-spacing-3 my-5" data-wow-delay="0.3s" rel="nofollow" style="font-size: larger">Choose your mentor</a>
+            <a href="mentor.html" class="btn bc-myPrime btn-rounded btn-lg wow fadeIn font-weight-bold letter-spacing-3 my-5" data-wow-delay="0.3s" rel="nofollow" onclick="homePageLinkTrack('Choose your mentor (How it works)')" style="font-size: larger">Choose your mentor</a>
           </div>
       </div>
       <!--Section: mentors-->
@@ -265,7 +264,7 @@
                             <div class="modal-content">
                                 <div class="my-modal-header">
                                     <h2 class="h2-responsive font-bold my-3 mx-md-auto text-md-center text-left w-75">Confirm interest for this mentor</h2>
-                                    <button type="button" class="m-2 close" data-dismiss="modal" aria-label="Close">
+                                    <button type="button" class="m-2 close" onclick="closeModal('Andrés Piñeiro (HomePage)')" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true" class="myPrime-text">×</span>
                                     </button>
                                 </div>
@@ -294,7 +293,7 @@
                                       <p class="h5-responsive">Can't wait to learn from Andrés Piñeiro?</p>
                                       <!-- <p class="h5-responsive">You will join a waiting list, so that you'll get notified and be able to book your first session when we launched.</p> -->
                                     </div>
-                                    <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" aria-label="Close" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Andr%C3%A9s+Pi%C3%B1eiro&entry.1107392353" target="_blank">Sign me up</a>
+                                    <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" aria-label="Close" onclick="signMeUp('Andrés Piñeiro (HomePage)')" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Andr%C3%A9s+Pi%C3%B1eiro&entry.1107392353" target="_blank">Sign me up</a>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +308,7 @@
                         </h6>
                       </div>
                     </div>
-                    <a class="modal-toggle d-table mx-auto font-weight-bold text-uppercase letter-spacing-3" data-toggle="modal" data-target="#4cf7ad1b3e">Register interest</a>
+                    <a class="modal-toggle d-table mx-auto font-weight-bold text-uppercase letter-spacing-3" onclick="registerInterest('Andrés Piñeiro (HomePage)')" data-toggle="modal" data-target="#4cf7ad1b3e">Register interest</a>
                   </div>
                 </div>
                 <div class="m-md-2 w-30">
@@ -322,7 +321,7 @@
                           <div class="modal-content">
                               <div class="my-modal-header">
                                   <h2 class="h2-responsive font-bold my-3 mx-md-auto text-md-center text-left w-75">Confirm interest for this mentor</h2>
-                                  <button type="button" class="m-2 close" data-dismiss="modal" aria-label="Close">
+                                  <button type="button" class="m-2 close" onclick="closeModal('Pete Hillman (HomePage)')" data-dismiss="modal" aria-label="Close">
                                       <span aria-hidden="true" class="myPrime-text">×</span>
                                   </button>
                               </div>
@@ -351,7 +350,7 @@
                                     <p class="h5-responsive">Can't wait to learn from Pete Hillman?</p>
                                     <!-- <p class="h5-responsive">You will join a waiting list, so that you'll get notified and be able to book your first session when we launched.</p> -->
                                   </div>
-                                  <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" aria-label="Close" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Pete+Hillman&entry.1107392353" target="_blank">Sign me up</a>
+                                  <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" aria-label="Close" onclick="signMeUp('Pete Hillman (HomePage)')" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Pete+Hillman&entry.1107392353" target="_blank">Sign me up</a>
                               </div>
                           </div>
                         </div>
@@ -367,7 +366,7 @@
                         </h6>
                       </div>
                     </div>
-                    <a class="modal-toggle d-table mx-auto font-weight-bold text-uppercase letter-spacing-3" data-toggle="modal" data-target="#b3bb0c9e48">Register interest</a>
+                    <a class="modal-toggle d-table mx-auto font-weight-bold text-uppercase letter-spacing-3" onclick="registerInterest('Pete Hillman (HomePage)')" data-toggle="modal" data-target="#b3bb0c9e48">Register interest</a>
                   </div>
                 </div>
                 <div class="m-md-2 w-30">
@@ -380,7 +379,7 @@
                           <div class="modal-content">
                               <div class="my-modal-header">
                                   <h2 class="h2-responsive font-bold my-3 mx-md-auto text-md-center text-left w-75">Confirm interest for this mentor</h2>
-                                  <button type="button" class="m-2 close" data-dismiss="modal" aria-label="Close">
+                                  <button type="button" class="m-2 close" onclick="closeModal('Charlie Birch (HomePage)')" data-dismiss="modal" aria-label="Close">
                                       <span aria-hidden="true" class="myPrime-text">×</span>
                                   </button>
                               </div>
@@ -409,7 +408,7 @@
                                     <p class="h5-responsive">Can't wait to learn from Charlie Birch?</p>
                                     <!-- <p class="h5-responsive">You will join a waiting list, so that you'll get notified and be able to book your first session when we launched.</p> -->
                                   </div>
-                                  <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" aria-label="Close" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Charlie+Birch&entry.1107392353" target="_blank">Sign me up</a>
+                                  <a class="btn bc-myPrime white-text btn-rounded font-weight-bold text-uppercase letter-spacing-2" aria-label="Close" onclick="signMeUp('Charlie Birch (HomePage)')" href="https://docs.google.com/forms/d/e/1FAIpQLSfDviKbRLceCbd7Tshvl90OTxvLonWaq3yAfAwACfADXzvz5Q/viewform?usp=pp_url&entry.773793796&entry.661698596&entry.1780960127=Charlie+Birch&entry.1107392353" target="_blank">Sign me up</a>
                               </div>
                           </div>
                         </div>
@@ -425,12 +424,12 @@
                         </h6>
                       </div>
                     </div>
-                    <a class="modal-toggle d-table mx-auto font-weight-bold text-uppercase letter-spacing-3" data-toggle="modal" data-target="#59ceef3876">Register interest</a>
+                    <a class="modal-toggle d-table mx-auto font-weight-bold text-uppercase letter-spacing-3" onclick="registerInterest('Charlie Birch (HomePage)')" data-toggle="modal" data-target="#59ceef3876">Register interest</a>
                   </div>
                 </div>
               </div>
             </section>
-            <a href="mentor.html" class="btn bc-myPrime btn-rounded btn-lg wow fadeIn font-weight-bold letter-spacing-3 my-5" data-wow-delay="0.3s" rel="nofollow" style="font-size: larger">See all Mentors</a>
+            <a href="mentor.html" class="btn bc-myPrime btn-rounded btn-lg wow fadeIn font-weight-bold letter-spacing-3 my-5" data-wow-delay="0.3s" rel="nofollow" onclick="homePageLinkTrack('See all Mentors (mentor sec.)')" style="font-size: larger">See all Mentors</a>
           </div>
       </div>
       <!--Section: partners-->
@@ -445,7 +444,7 @@
           <section class="text-center wow fadeIn" data-wow-delay="0.3s">
               <p class="h5-responsive my-5">We are always open to partner with like-minded individuals and businesses. Fill the interest form and let’s get talking!
               </p>
-              <a class="typeform-share btn letter-spacing-2 font-weight-bold bc-myBackground myPrime-text btn-rounded btn-lg mt-3 mb-5 wow fadeIn" href="https://re-now.typeform.com/to/x7Fvmn" data-mode="popup" style="font-size: larger;" target="_blank" data-wow-delay="0.3s">PARTNER WITH US</a>
+              <a class="typeform-share btn letter-spacing-2 font-weight-bold bc-myBackground myPrime-text btn-rounded btn-lg mt-3 mb-5 wow fadeIn" href="https://re-now.typeform.com/to/x7Fvmn" data-mode="popup" style="font-size: larger;" target="_blank" data-wow-delay="0.3s" onclick="homePageLinkTrack('PARTNER WITH US')">PARTNER WITH US</a>
           </section>
         </div>
       </div>
@@ -497,7 +496,7 @@
             </div>
           </section>
           <p class="h5-responsive text-center wow fadeIn my-5 font-weight-bold" data-wow-delay="0.2s">We are looking to expand our passionate, hard-working and distributed team who are presently building Re.Now. </p>
-          <a class="btn letter-spacing-2 font-weight-bold bc-myPrime myBackground-text btn-rounded btn-lg mt-3 mb-5 wow fadeIn" href="https://angel.co/re-now/jobs" style="font-size: larger;" target="angel.co" data-wow-delay="0.3s">WORK WITH US</a>
+          <a class="btn letter-spacing-2 font-weight-bold bc-myPrime myBackground-text btn-rounded btn-lg mt-3 mb-5 wow fadeIn" href="https://angel.co/re-now/jobs" style="font-size: larger;" target="angel.co" data-wow-delay="0.3s" onclick="homePageLinkTrack('WORK WITH US')">WORK WITH US</a>
         </div>
       </div>
       <!--Section: Subscribe-->
@@ -528,7 +527,6 @@
     </main>
     <!--Footer-->
     <footer class="page-footer bc-myDarkBlue center-on-small-only unique-color-dark pt-0 mt-0">
-
         <!--Footer Links-->
         <div class="container pt-5 mb-4 text-center text-md-left">
             <div class="row">
@@ -538,10 +536,10 @@
                     <h6 class="title font-bold text-uppercase letter-spacing-2"><strong>Re.Now</strong></h6>
                     <hr class="bc-myOrange accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <div class="d-flex flex-column">
-                      <p><a href="https://goo.gl/forms/Pn5KvkDJyAwAF2KB2" target="_blank">Join as a mentee</a></p>
-                      <p><a href="https://re-now.typeform.com/to/W23F0v" data-mode="popup" class="typeform-share" target="_blank">Become a mentor</a></p>
-                      <p><a href="https://re-now.typeform.com/to/x7Fvmn" data-mode="popup" class="typeform-share" target="_blank">Partner with us</a></p>
-                      <p><a href="https://angel.co/re-now/jobs" target="angel.co">Work with us</a></p>
+                      <p><a href="https://goo.gl/forms/Pn5KvkDJyAwAF2KB2" onclick="footerLinkTrack('Join as a mentee')" target="_blank">Join as a mentee</a></p>
+                      <p><a href="https://re-now.typeform.com/to/W23F0v" data-mode="popup" class="typeform-share" onclick="footerLinkTrack('Become a mentor')" target="_blank">Become a mentor</a></p>
+                      <p><a href="https://re-now.typeform.com/to/x7Fvmn" data-mode="popup" class="typeform-share" onclick="footerLinkTrack('Partner with us')" target="_blank">Partner with us</a></p>
+                      <p><a href="https://angel.co/re-now/jobs" onclick="footerLinkTrack('Work with us')" target="angel.co">Work with us</a></p>
                     </div>
                 </div>
                 <!--/.First column-->
@@ -551,28 +549,28 @@
                     <h6 class="title font-bold text-uppercase letter-spacing-2"><strong>Contact</strong></h6>
                     <hr class="bc-myOrange accent-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>For any further queries, feel free to email us. We'd be glad to help!</p>
-                    <p><a href="mailto:team@renow.io"class="icons-sm ml-0"><i class="fa fa-envelope mr-3"></i> team@renow.io</a></p>
+                    <p><a href="mailto:team@renow.io" class="icons-sm ml-0" onclick="footerLinkTrack('Write to Re.Now')"><i class="fa fa-envelope mr-3"></i> team@renow.io</a></p>
                     <!-- <p><i class="fa fa-phone mr-3"></i> +886 966 658 547</p> -->
-                    <p class="small-text">Icons created by <a href="https://thenounproject.com/Becris/">Becris</a></p>
+                    <p class="small-text">Icons created by <a href="https://thenounproject.com/Becris/" onclick="footerLinkTrack('Icons created by Becris')">Becris</a></p>
                 </div>
                 <!--/.Second column-->
                 <div id="social_media_links"class="text-center text-md-left m-auto flex-center flex-wrap">
                     <!--Facebook-->
-                    <a href="https://www.facebook.com/ReNowHub/" target="_blank" class="icons-sm flex-center m-3"><i class="fa fa-facebook white-text"></i></a>
+                    <a href="https://www.facebook.com/ReNowHub/" target="_blank" class="icons-sm flex-center m-3" onclick="footerLinkTrack('facebook icon')"><i class="fa fa-facebook white-text"></i></a>
                     <!--Twitter-->
-                    <a href="https://twitter.com/ReNowHub" target="_blank" class="icons-sm flex-center m-3"><i class="fa fa-twitter white-text"></i></a>
+                    <a href="https://twitter.com/ReNowHub" target="_blank" class="icons-sm flex-center m-3" onclick="footerLinkTrack('twitter icon')"><i class="fa fa-twitter white-text"></i></a>
                     <!--Google +-->
-                    <a href="https://plus.google.com/u/1/105412067266593813416" target="_blank" class="icons-sm flex-center m-3"><i class="fa fa-google-plus white-text"></i></a>
+                    <!-- <a href="https://plus.google.com/u/1/105412067266593813416" target="_blank" class="icons-sm flex-center m-3" onclick="footerLinkTrack('google plus icon')"><i class="fa fa-google-plus white-text"></i></a> -->
                     <!--Linkedin-->
-                    <a href="https://www.linkedin.com/company/13574428/" target="_blank" class="icons-sm flex-center m-3"><i class="fa fa-linkedin white-text"></i></a>
+                    <a href="https://www.linkedin.com/company/13574428/" target="_blank" class="icons-sm flex-center m-3" onclick="footerLinkTrack('linkedIn icon')"><i class="fa fa-linkedin white-text"></i></a>
                     <!--Instagram-->
-                    <a href="https://www.instagram.com/renowhub/" target="_blank" class="icons-sm flex-center m-3"><i class="fa fa-instagram white-text"></i></a>
+                    <a href="https://www.instagram.com/renowhub/" target="_blank" class="icons-sm flex-center m-3" onclick="footerLinkTrack('Instagram icon')"><i class="fa fa-instagram white-text"></i></a>
                     <!--AngelList-->
-                    <a href="https://angel.co/re-now" target="_blank" class="icons-sm flex-center m-3"><i class="fa fa-angellist white-text"></i></a>
+                    <a href="https://angel.co/re-now" target="_blank" class="icons-sm flex-center m-3" onclick="footerLinkTrack('AngelList icon')"><i class="fa fa-angellist white-text"></i></a>
                     <!--ProductHunt-->
-                    <a href="https://www.producthunt.com/upcoming/renow" target="_blank" class="icons-sm flex-center m-3"><i class="fa fa-product-hunt white-text"></i></a>
+                    <a href="https://www.producthunt.com/upcoming/renow" target="_blank" class="icons-sm flex-center m-3" onclick="footerLinkTrack('ProductHunt icon')"><i class="fa fa-product-hunt white-text"></i></a>
                     <!-- Email us -->
-                    <!-- <a href="mailto:team@renow.io target="_blank""class="icons-sm flex-center m-3"><i class="fa fa-envelope white-text"> </i></a> -->
+                    <!-- <a href="mailto:team@renow.io" target="_blank" class="icons-sm flex-center m-3" onclick="footerLinkTrack('email icon')"><i class="fa fa-envelope white-text"> </i></a> -->
                 </div>
             </div>
         </div>
@@ -581,7 +579,7 @@
         <!-- Copyright-->
         <div class="footer-copyright bc-myDarkBlue">
             <div class="container-fluid">
-                © 2018 Copyright: <a href="https://renow.io"><strong> Re.Now Inc.</strong></a>
+                © 2018 Copyright: <a href="https://renow.io" onclick="footerLinkTrack('2018 Copyright: Re.Now Inc.')"><strong> Re.Now Inc.</strong></a>
             </div>
         </div>
         <!--/.Copyright -->
