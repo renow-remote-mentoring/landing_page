@@ -480,11 +480,11 @@ header {
 
 .mce_inline_error {
   margin: 0 !important;
-  padding: 0 !important;
+  padding: 0 0 0 8px !important;
   background-color: transparent !important;
   position: absolute !important;
   left: 0 !important;
-  bottom: 0 !important;
+  bottom: -6px !important;
   z-index: 50 !important;
 }
 
