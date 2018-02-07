@@ -356,8 +356,7 @@ header ul {
 #submitBtn {
   z-index: 99;
   position: absolute;
-  right: 0;
-  top: 0; }
+  right: 0; }
 
 #mc-embedded-subscribe {
   border-radius: 10000px !important;
