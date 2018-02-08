@@ -1,1 +1,36 @@
-var $nav=$(".navbar");var $navbarNav=$(".navbar-nav");var $cover=$("header");var $top=$("#backToTop");var $nextSec=$("#nextSec");var $bottomNav=$("#bottomNav");new WOW().init();$(function(){$(document).scroll(function(){$nav.toggleClass('scrolled',$(this).scrollTop()>($cover.height()-$nav.height()));$bottomNav.toggleClass('scrolled',$(this).scrollTop()>($cover.height()-$nav.height()));$top.toggleClass('scrolled',$(this).scrollTop()>($cover.height()-$nav.height()));$nextSec.toggleClass('scrolled',$(this).scrollTop()>0);});});function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0;}function nextSecFunction(){document.body.scrollTop=($cover.height()-$nav.height());document.documentElement.scrollTop=($cover.height()-$nav.height());}
+var $nav = $(".navbar");
+var $navbarNav = $(".navbar-nav");
+var $cover = $("header");
+var $top = $("#backToTop");
+var $nextSec = $("#nextSec");
+var $bottomNav = $("#bottomNav");
+// animation
+new WOW().init();
+// nav cantrol
+$(function () {
+  $(document).scroll(function () {
+    $nav.toggleClass('scrolled', $(this).scrollTop() > ($cover.height()-$nav.height()));
+    // $navbarNav.toggleClass('scrolled', $(this).scrollTop() > ($cover.height()-$nav.height()));
+    $bottomNav.toggleClass('scrolled', $(this).scrollTop() > ($cover.height()-$nav.height()));
+    $top.toggleClass('scrolled', $(this).scrollTop() > ($cover.height()-$nav.height()));
+    $nextSec.toggleClass('scrolled', $(this).scrollTop() > 0);
+  });
+});
+// backToTop
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+// nextSec
+function nextSecFunction() {
+  document.body.scrollTop = ($cover.height()-$nav.height()); // For Chrome, Safari and Opera
+  document.documentElement.scrollTop = ($cover.height()-$nav.height()); // For IE and Firefox
+}
+// browser detection
+// $(function () {
+// if (navigator.userAgent.indexOf('Safari') != -1 &&
+//     navigator.userAgent.indexOf('Chrome') == -1) {
+//         $(".navbar").addClass("safari");
+//         $("#mc_embed_signup_scroll").addClass("safari");
+//     }
+// });
