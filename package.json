@@ -20,26 +20,26 @@
   },
   "homepage": "https://github.com/kjohn01/WorldWideWork#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.24.4",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.8.0",
+    "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^3.3.0",
+    "gulp-imagemin": "^3.4.0",
     "gulp-pug": "^3.3.0",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^3.2.1",
     "gulp-uglify": "^3.0.0",
-    "run-sequence": "^2.1.0"
+    "run-sequence": "^2.2.1"
   },
   "dependencies": {
     "critical": "^0.9.1",
+    "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
-    "jquery": "^3.2.1",
+    "jquery": "^3.3.1",
     "jquery-smooth-scroll": "^2.2.0",
     "smoothscroll": "^0.4.0",
-    "snyk": "^1.67.0"
+    "snyk": "^1.82.0"
   },
   "snyk": true
 }
