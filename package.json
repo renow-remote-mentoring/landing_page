@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "snyk test",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepublish": "npm run snyk-protect"
   },
   "repository": {
@@ -33,13 +33,14 @@
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "critical": "^0.9.1",
-    "gulp": "^3.9.1",
+    "critical": "^1.3.8",
+    "gulp": "^4.0.0",
     "gulp-util": "^3.0.8",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jquery-smooth-scroll": "^2.2.0",
     "smoothscroll": "^0.4.0",
-    "snyk": "^1.82.0"
+    "snyk": "^1.996.0",
+    "@snyk/protect": "latest"
   },
   "snyk": true
 }
