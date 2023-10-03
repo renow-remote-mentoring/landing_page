@@ -33,7 +33,7 @@
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "critical": "^0.9.1",
+    "critical": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
     "jquery": "^3.3.1",
